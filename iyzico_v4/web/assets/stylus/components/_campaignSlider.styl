@@ -1,0 +1,1060 @@
+.campaignSlider
+  max-width 1170px
+  margin 0px auto
+  width calc( 100% - 140px)
+
+  @media(max-width 1023px)
+    width calc(100% - 32px)
+
+  @media(max-width 767px)
+    width 100%
+
+  .sliderContainer
+    .slick-list
+      border-radius 36px
+      overflow hidden
+
+      @media(max-width 767px)
+        border-radius 16px
+
+    .slick-arrow
+      width 48px
+      height 48px
+      border-radius 25px
+
+    .slick-prev
+      left -60px
+      background-image url('../images/icons/left-arrow-passive.svg')
+
+      &:hover
+        background-image url('../images/icons/left-arrow-active.svg')
+
+
+    .slick-next
+      right -60px
+      background-image url('../images/icons/right-arrow-passive.svg')
+
+      &:hover
+        background-image url('../images/icons/right-arrow-active.svg')
+
+    .slick-dots
+      height 10px
+      margin 24px 0 0 0
+
+      @media(max-width 767px)
+        margin 17px 0 0 0
+
+    .campaignSliderBox
+      display flex
+      justify-content space-between
+      height 100%
+      min-height 376px
+      border-radius 36px
+      overflow hidden
+
+      @media(max-width 960px)
+        min-height 320px
+
+      @media(max-width 767px)
+        min-height 140px
+        border-radius 16px
+        margin 0 20px
+
+      .campaignSliderContent
+        display flex
+        flex-direction column
+        justify-content center
+        padding 48px 0 48px 64px
+
+        @media(max-width 960px)
+          padding 32px 0 32px 40px
+
+        @media(max-width 767px)
+          padding 20px 0 20px 20px
+
+        .title
+          font-size 34px
+          font-weight bold
+          padding-bottom 16px
+          line-height normal
+          color $gray-900
+
+          @media(max-width 960px)
+            font-size 24px
+
+          @media(max-width 767px)
+            font-size 14px
+            padding-bottom 16px
+
+        .desc
+          font-size 24px
+          padding-bottom 16px
+          line-height normal
+          max-width 504px
+          color $gray-900
+
+          @media(max-width 960px)
+            font-size 16px
+
+          @media(max-width 767px)
+            display none
+
+        .primary
+          min-width 240px
+          justify-content center
+          color $gray-100
+          background-color $gray-900
+
+          @media(max-width 767px)
+            font-size 12px !important
+            padding 9px
+            line-height 12px
+            min-width 120px
+
+      .campaignSliderImgBox
+        display flex
+        align-self center
+
+        img
+          max-height 350px
+          display flex
+
+          @media(max-width 767px)
+            max-height 106px
+
+    #camper
+      background-color #df3f44
+
+      .title
+        color $gray-100
+
+      .desc
+        color $gray-100
+
+      .primary
+        color #df3f44
+        background-color $gray-100
+
+      .campaignSliderImgBox
+        img
+          @media(max-width 960px)
+            max-width 272px
+
+    #camperSeptember
+      background-color #fff5f5
+
+      @media(max-width 767px)
+        background-image url('../images/content/camper-banner-img-new.png')
+        background-size 112px 112px
+        background-position-x calc( 100% + -10px)
+        background-position-y center
+        background-repeat no-repeat
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 500px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        align-self flex-end
+        margin-right 40px
+
+        @media(max-width 767px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #elcaCosmetics
+      background-color #fff1cc
+      background-image url('../images/content/elca-banner-img.png')
+      background-position right
+      background-repeat no-repeat
+      background-size contain
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #elcaCosmeticsOctober
+      background-color #f8f6fb
+      background-image url('../images/content/elca-october-banner-img.png')
+      background-position right
+      background-repeat no-repeat
+      background-size contain
+
+      @media(max-width 960px)
+        background-position calc( 100% + 80px )
+
+      @media(max-width 767px)
+        background-position calc( 100% + 50px )
+
+      .campaignSliderContent
+        padding 40px 0 40px 64px
+
+        @media(max-width 767px)
+          padding 20px 0 20px 20px
+
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 650px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #sportime
+      background-color #e9ecef
+      background-image url('../images/content/sportime-banner-img.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #flavus
+      background-color #fdfaf4
+      background-image url('../images/content/flavus-slider-banner-img.png')
+      background-position right
+      background-repeat no-repeat
+      background-size contain
+
+      @media(max-width 960px)
+        background-position calc( 100% + 80px )
+
+      @media(max-width 767px)
+        background-position calc( 100% + 50px )
+
+      .campaignSliderContent
+        padding 40px 0 40px 64px
+
+        @media(max-width 767px)
+          padding 20px 0 20px 20px
+
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 650px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #flavusSeptember
+      background-color #f3f5f7
+      background-image url('../images/content/flavus-slider-banner.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 120px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 60px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #gKD
+      background-color #f3f5f6
+      background-image url('../images/content/guzel-kelimeler-dukkani-slider-banner.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 30px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 36px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+
+      .campaignSliderContent
+        p
+          br
+
+            &:last-child
+              display none !important
+
+            @media(max-width 960px)
+              display none !important
+
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 188px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #beto
+      background-color #fff1cc
+      background-image url('../images/content/beto-slider-banner.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 130px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 56px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+
+      .campaignSliderContent
+        p
+          br
+
+            &:last-child
+              display none !important
+
+            @media(max-width 960px)
+              display none !important
+
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 188px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #milagron
+      background-color #f1f3f5
+
+      .campaignSliderImgBox
+        padding-right 44px
+        height 376px
+        display flex
+        align-items center
+
+        @media(max-width 960px)
+          padding-right 16px
+          height 320px
+
+        @media(max-width 767px)
+          height 140px
+
+        img
+          @media(max-width 960px)
+            max-width 266px
+
+          @media(max-width 767px)
+            max-height 86px
+
+    #slazenger
+      background-color #f5f9ff
+
+      @media(max-width 960px)
+        background-image url('../images/content/slazenger-campaign-slide.png')
+        background-size 308px 192px
+        background-position-x calc(100% - 10px)
+        background-position-y center
+        background-repeat no-repeat
+
+
+      @media(max-width 767px)
+        background-image url('../images/content/slazenger-campaign-slide.png')
+        background-size 136px 76px
+        background-position-x calc(100% - 10px)
+        background-position-y center
+        background-repeat no-repeat
+
+      .campaignSliderContent
+        .desc
+          max-width 514px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #justinbeauty
+      background-color #ebfbee
+
+      @media(max-width 767px)
+        position relative
+
+      .campaignSliderImgBox
+        height 376px
+        align-items flex-end
+        padding-right 64px
+
+        @media(max-width 960px)
+          height 320px
+          padding-right 16px
+
+        @media(max-width 767px)
+          height 140px
+          position absolute
+          right 0
+
+        img
+          @media(max-width 1115px)
+            width 100%
+            max-height 272px
+
+          @media(max-width 767px)
+            max-width 110px
+
+      .campaignSliderContent
+        @media(max-width 960px)
+          max-width 330px
+
+        .title
+          br
+            &:first-child
+              @media(max-width 960px)
+                display none
+
+              @media(max-width 767px)
+                display block
+
+            &:last-child
+              display none
+
+              @media(max-width 767px)
+                display block
+
+        @media(max-width 767px)
+          padding 10px 0 10px 20px
+
+
+    #vitruta
+      background-image url('../images/content/vitruta-slider-image.png')
+      background-size cover
+
+      @media(max-width 1023px)
+        background-image url('../images/content/vitruta-slider-image-m.png')
+
+      .campaignSliderContent
+        .title
+          color $gray-900
+
+        .desc
+          color $gray-900
+
+    #shopigo
+      background-color #f5f9ff
+
+      @media(max-width 767px)
+        background-image url('../images/content/shopigo-banner-img.png')
+        background-size 143px 95px
+        background-position-x right
+        background-position-y bottom
+        background-repeat no-repeat
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        align-self flex-end
+
+        @media(max-width 767px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+
+    #milagron
+      background-color #f3f5f7
+      background-image url('../images/content/flavus-banner.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 120px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 60px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #dkdukkan
+      background-color #f9fbfb
+      background-image url('../images/content/dkdukkan-banner-web.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 120px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 60px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+        background-position calc(100% + 44px)
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #dkdukkanAugust
+      background-color #fff1cc
+      background-image url('../images/content/dkdukkan-august-banner-web.png')
+      background-position right
+      background-repeat no-repeat
+      background-size cover
+
+
+      @media(max-width 1170px)
+        background-position calc( 100% + 120px)
+
+      @media(max-width 767px)
+        background-position calc( 100% + 60px)
+        background-size contain
+
+      @media(max-width 500px)
+        background-size cover
+        background-position calc(100% + 44px)
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        padding-right 64px
+
+        @media(max-width 960px)
+          padding-right 16px
+
+        @media(max-width 960px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+    #miniso
+      background-color #fff5f5
+
+      @media(max-width 767px)
+        background-image url('../images/content/miniso-banner-img-new.png')
+        background-size 131px 115px
+        background-position-x calc( 100% + -10px)
+        background-position-y bottom
+        background-repeat no-repeat
+
+      .campaignSliderContent
+        p
+          br
+            &:last-child
+              display none !important
+
+              @media(max-width 767px)
+                display block !important
+        .desc
+          max-width 575px
+
+          @media(max-width 960px)
+            max-width 340px
+
+        @media(max-width 1023px)
+          .title
+            font-size 24px
+
+            @media(max-width 767px)
+              font-size 14px
+
+          .desc
+            font-size 16px
+
+        @media(max-width 960px)
+          max-width 380px
+
+        @media(max-width 767px)
+          max-width 178px
+
+      .campaignSliderImgBox
+        align-self flex-end
+        margin-right 40px
+
+        @media(max-width 767px)
+          display none
+
+        img
+          max-width 470px
+
+          @media(max-width 1023px)
+            max-width 380px
+
+

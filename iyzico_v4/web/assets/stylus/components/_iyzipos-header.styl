@@ -1,0 +1,81 @@
+.iyzipos-background
+  background url('../images/content/iyzipos-header-bg.gif') repeat-x
+
+.iyzipos-header-holder
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+  @media(max-width 320px)
+    position relative
+    margin-top: -80px;
+
+.iyzipos-header-va
+  position relative
+  top 50%
+  transform translateY(-50%)
+
+  @media(max-width 992px)
+    padding: 30px 0;
+    transform none
+    top 100px
+
+  @media(max-width 320px)
+    top 0
+    transform none
+
+.iyzipos-header
+  clearfix()
+
+  @media(max-width 992px)
+    text-align center
+
+  &__title
+    font-size 36px
+    font-weight 3030301
+    line-height 1.39
+    color #212121
+    margin 0
+    margin-bottom 30px
+    font-weight 300
+
+  &__content
+    font-size 20px
+    line-height 1.5
+    letter-spacing 1px
+    color #212121
+    margin 0
+    margin-bottom 40px
+
+  &__media
+    width 535px
+    height 299px
+    background-color transparent
+    box-shadow 0 5px 10px 0 rgba(0, 0, 0, 0.05)
+
+    @media(max-width 992px)
+      margin 0 auto
+      margin-top 60px
+
+    @media(max-width 768px)
+      width 385px
+      height 216px
+
+    @media(max-width 425px)
+      width 355px
+      height 199px
+
+    @media(max-width 375px)
+      width 305px
+      height 170px
+
+    @media(max-width 320px)
+      width 250px
+      height 140px
+
+    &--wrapper
+      width 100%
+      height 100%
+      background-color $white

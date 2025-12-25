@@ -1,0 +1,89 @@
+.helpCenterCategory
+  .generalConditionsContent
+    .container
+      margin-bottom 100px
+
+      @media(max-width 1023px)
+        width 100%
+        max-width 100%
+        margin-top 56px
+
+      @media(max-width 767px)
+        margin 40px 0
+
+      .leftMenu
+        flex 4
+        padding 0 15px
+
+        ul
+          background-color #f8f9fa
+          padding 24px
+          border-radius 16px
+          margin-bottom 24px
+
+          .title
+            padding-bottom 8px
+
+            a
+              font-size 24px
+              color $gray-900
+
+          li
+            padding 12px 0
+            display flex
+
+            a
+              font-size 16px
+              color $gray-900
+
+            &:before
+              border none
+              width 0
+              height 0
+              margin 0
+
+          .active
+            &:before
+              background-image: url('../images/content/nG-progress.svg')
+              width 24px
+              height 16px
+              display block
+              border none
+              background-repeat no-repeat
+              margin 3px 8px 0 0
+
+            a
+              color $clear-blue
+
+      .content
+        padding-top 0
+        flex 8
+        padding 0 15px
+
+        ul
+          padding-top 20px
+          margin 0
+
+          li
+            margin 0 0 80px 0
+            padding 0
+            background-image none
+            box-shadow none
+
+            @media(max-width 1023px)
+              margin 0
+
+            .title
+              color $gray-900
+              padding-bottom 16px
+
+              @media(max-width 1023px)
+                font-size 16px
+
+            p
+              font-size 16px
+              line-height 25px
+              color $gray-900
+
+
+

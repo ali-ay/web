@@ -1,0 +1,31 @@
+imports:
+    - { resource: config.yml }
+
+#doctrine:
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+framework:
+  assets:
+
+      version: 'v4.0.305'
+      version_format: '%%s?v=%%s'
+      base_path: '/'
+      # prod'a geçildikten sonra üst satır kalkmalı, alt iki satır uncomment edilmeli.
+      #base_urls:
+      #  - '//localhost:8082/f/'
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: error
+            handler:      nested
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: critical
+        console:
+            type:  console

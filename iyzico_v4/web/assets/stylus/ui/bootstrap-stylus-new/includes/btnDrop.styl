@@ -1,0 +1,100 @@
+.dropup,
+.dropdown
+  position relative
+
+.dropdown-toggle
+  &::before
+    border 1.5px solid #848484
+    border-left 1px solid transparent
+    border-top 1px solid transparent
+    box-sizing border-box
+    content ''
+    display inline-block
+    height 10px
+    left 0px
+    position relative
+    top -2px
+    -webkit-transform rotate(45deg)
+    -ms-transform rotate(45deg)
+    transform rotate(45deg)
+    opacity .75
+    overflow hidden
+    width 10px
+
+  &:empty
+    &::after
+      margin-left 0
+
+.dropup
+  .dropdown-menu
+    margin-top 0
+    margin-bottom 0.125rem
+  .dropdown-toggle
+    &::after
+      border-top 0
+      border-bottom 0.3em solid
+
+.dropdown-menu
+  position absolute
+  top 100%
+  left 0
+  z-index 1000
+  display none
+  float left
+  min-width 10rem
+  padding 0.5rem 0
+  margin 0.125rem 0 0
+  font-size 1rem
+  color $gray-900
+  text-align left
+  list-style none
+  background-color $white
+  background-clip padding-box
+  border 1px solid rgba(0, 0, 0, 0.15)
+  border-radius $border-radius
+  &.show
+    display block
+
+.dropdown-divider
+  height 0
+  margin 0.5rem 0
+  overflow hidden
+  border-top 1px solid #e9ecef
+
+.dropdown-item
+  display block
+  width 100%
+  padding 0.25rem 1.5rem
+  clear both
+  font-weight $font-weight-normal
+  color $gray-900
+  text-align inherit
+  white-space nowrap
+  background none
+  border 0
+
+  @media (max-width 768px)
+    white-space normal
+
+
+.dropdown-item:focus, .dropdown-item:hover
+  color #16181b
+  text-decoration none
+  background-color $light
+
+.dropdown-item.active, .dropdown-item:active
+  color $white
+  text-decoration none
+  background-color $primary
+
+.dropdown-item.disabled, .dropdown-item:disabled
+  color $secondary
+  background-color transparent
+
+.dropdown-header
+  display block
+  padding 0.5rem 1.5rem
+  margin-bottom 0
+  font-size $font-size-sm
+  color $secondary
+  white-space nowrap

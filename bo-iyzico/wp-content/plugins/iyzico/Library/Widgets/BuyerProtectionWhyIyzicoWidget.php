@@ -1,0 +1,143 @@
+<?php
+
+use Iyzico\Library\Utils;
+
+class BuyerProtectionWhyIyzicoWidget extends \WP_Widget
+{
+    const WIDGET_NAME = 'BuyerProtectionWhyIyzicoWidget';
+    const WIDGET_TITLE = 'Buyer Protection Why iyzico Widget';
+    const WIDGET_DESCRIPTION = ' ';
+
+    function __construct()
+    {
+        parent::__construct(
+            self::WIDGET_NAME, __(self::WIDGET_TITLE, 'iyzico'), array('description' => __(self::WIDGET_DESCRIPTION, 'iyzico'))
+        );
+    }
+
+    public function getFields(){
+        return array(
+            'title'  => array(
+                "type"      => "input",
+                "default"   => "Korumalı Alışveriş’ten Nasıl Faydalanabilirim?",
+                "label"     => "Main Title"
+            ),
+            'description'  => array(
+                "type"      => "textarea",
+                "default"   => "Korumalı Alışveriş logosunu gördüğünüz e-ticaret sitelerinde ödemelerinizi, kargonuzun size teslim edilmesinin ardından 3 gün boyunca sizin için koruma altında tutuyoruz! ",
+                "label"     => "Main Description"
+            ),
+            'boxOneIconClass'  => array(
+                "type"      => "input",
+                "default"   => "icon--entegrasyon",
+                "label"     => "Box #1 Icon Class"
+            ),
+            'boxOneTitle'  => array(
+                "type"      => "input",
+                "default"   => "Kolay Entegrasyon",
+                "label"     => "Box #1 Title"
+            ),
+            'boxOneDescription'  => array(
+                "type"      => "textarea",
+                "default"   => "",
+                "label"     => "Box #1 Description"
+            ),
+            'boxTwoIconClass'  => array(
+                "type"      => "input",
+                "default"   => "icon--destek",
+                "label"     => "Box #2 Icon Class"
+            ),
+            'boxTwoTitle'  => array(
+                "type"      => "input",
+                "default"   => "Hızlı Destek",
+                "label"     => "Box #2 Title"
+            ),
+            'boxTwoDescription'  => array(
+                "type"      => "textarea",
+                "default"   => "",
+                "label"     => "Box #2 Description"
+            ),
+            'boxThreeIconClass'  => array(
+                "type"      => "input",
+                "default"   => "icon--guvenli-odeme",
+                "label"     => "Box #3 Icon Class"
+            ),
+            'boxThreeTitle'  => array(
+                "type"      => "input",
+                "default"   => "Güvenli Ödeme",
+                "label"     => "Box #3 Title"
+            ),
+            'boxThreeDescription'  => array(
+                "type"      => "textarea",
+                "default"   => "",
+                "label"     => "Box #3 Description"
+            ),
+        );
+    }
+
+    public function widget($args, $instance)
+    {
+        $utils = new Utils();
+
+        $fields = $this->getFields();
+        $jsonData = array();
+        foreach($fields as $fieldName=>$fieldObject) {
+            $fields[$fieldName]['value'] = $instance[$fieldName];
+            if (function_exists ( 'icl_translate' )){
+                $fields[$fieldName]['value']    = icl_translate('Widgets', self::WIDGET_NAME.' -'.$fieldName, $instance[$fieldName]);
+            }
+            $jsonData[$fieldName] = $fields[$fieldName]['value'];
+            if ($fieldObject['type'] == "image") {
+                $jsonData[$fieldName] = $utils->generateMediaUrlObject($jsonData[$fieldName]);
+            }
+        }
+        echo(json_encode($jsonData,JSON_UNESCAPED_SLASHES));
+    }
+
+    public function form($instance)
+    {
+
+        foreach(self::getFields() as $fieldName=>$fieldOptions) {
+
+            wp_enqueue_script('jquery');
+            wp_enqueue_media();
+
+            if (isset($instance[$fieldName])) {
+                $fieldValue = $instance[$fieldName];
+            } else {
+                $fieldValue = __($fieldOptions['default'], 'iyzico');
+            } ?>
+
+            <p>
+                <label for="<?php echo $this->get_field_id($fieldName); ?>"><?php _e($fieldOptions['label']); ?></label>
+                <?php if ($fieldOptions['type'] == "input") {?>
+                    <input type="text" class="widefat" id="<?php echo $this->get_field_id($fieldName); ?>" name="<?php echo $this->get_field_name($fieldName); ?>" value="<?php echo $fieldValue; ?>"/>
+                <?php } else if ($fieldOptions['type'] == "textarea") {?>
+                    <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id($fieldName); ?>" name="<?php echo $this->get_field_name($fieldName); ?>"><?php echo $fieldValue; ?></textarea>
+                <?php } else if ($fieldOptions['type'] == "image"){?>
+                    <br/><input style="width:300px" class="<?php echo $fieldName;?>" type="text" id="<?php echo $this->get_field_id($fieldName); ?>" name="<?php echo $this->get_field_name($fieldName); ?>" value="<?php echo $fieldValue; ?>" class="regular-text">
+                    <input type="button" name="upload-btn" id="upload-btn" class="button-secondary upload-btn" value="İmaj Yükle" style="float:right" data-target="<?php echo $fieldName;?>">
+                <?php }?>
+            </p>
+            <?php
+        }?>
+        <?php
+    }
+
+    public function update($new_instance, $old_instance)
+    {
+        $instance = array();
+        foreach(self::getFields() as $fieldName=>$fieldOptions) {
+            $instance[$fieldName] = (!empty($new_instance[$fieldName])) ? $new_instance[$fieldName] : '';
+            if (function_exists ( 'icl_register_string' )){
+                icl_register_string('Widgets', self::WIDGET_NAME.' -'.$fieldName, $instance[$fieldName]);
+            }
+        }
+        return $instance;
+    }
+
+    public function load_widget()
+    {
+        register_widget(self::WIDGET_NAME);
+    }
+}

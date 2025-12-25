@@ -1,0 +1,39 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: symfony
+    database_user: root
+    database_password: null
+    mailer_transport: sendmail
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: '9g*C^Z@Mp9k1#TzAWWQi#0TFhHEK$q'
+    geo_ip_path: '%kernel.root_dir%/../geoip/GeoIP.dat'
+    wp_api_url: 'http://localhost:8081/wp-json/'
+    blog_url: 'https://www.iyzico.com/blog'
+    merchant_api:
+        url: 'https://merchant.iyzipay.com/api/merchant/'
+        developerKey: 7K1prU3EkworCTMdioau8poopGI4bU9F
+        salt: 'twB9m=!?yZcO!T16'
+        stgKey: CHcmuVVbJtuxgtGlYyOJZgPyVP3fI05V
+        stgSalt: 'xyZ4m!=?yZcO!j75'
+    menu_ids:
+        top_menu: 3
+        footer_products: 6
+        footer_about: 7
+        footer_resources: 8
+        footer_social_media: 9
+        who_we_are: 3
+        integration: 26
+    email_addresses:
+        basvuru: basvuru@iyzico.com
+        destek: destek@iyzico.com
+        sikayet: sikayet@iyzico.com
+        entegrasyon: entegrasyon@iyzico.com
+        odeme: odeme@iyzico.com
+        hr: career@iyzico.com
+        partners: partners@iyzico.com
+        internationalSales: intsales@iyzico.com
+        teleSales: telesales@iyzico.com

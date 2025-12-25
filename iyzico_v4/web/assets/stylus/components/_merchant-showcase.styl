@@ -1,0 +1,111 @@
+.merchant-showcase
+  position relative
+  padding 90px 0 60px 0
+  text-align center
+  color #313131
+  background:#fcfcfc
+
+  @media(max-width 768px)
+    padding 30px 0 30px 0
+
+  &__wrap
+    position relative
+    flex-wrap inherit
+
+    @media(min-width 768px)
+      width 100%
+      display flex
+      align-items center
+      justify-content center
+
+  &__title
+    display none
+    font-size 16px
+    line-height 1.44
+    letter-spacing 1px
+    font-family 'Bitter'
+    font-weight normal
+    font-style italic
+    margin 0
+    min-height 96px
+
+    &.active
+      display block
+
+    @media(min-width 768px)
+      font-size 34px
+
+  &__seperator
+    width 103px
+    height 3px
+    background-color #2BCFCF
+    margin 20px auto
+
+  &__description
+    font-size 17.6px
+    font-weight 500
+    line-height 1.27
+
+  &__image-wrap
+    min-height 103px
+
+  &__box
+    width 370px
+    min-height 381px
+    display block
+    float left
+    text-align center
+    position relative
+    cursor pointer
+
+    @media(max-width 768px)
+      width 100%
+
+
+    .merchant-showcase__box--content
+      display block
+
+      & img
+        display inline-block
+
+      @media(min-width 768px)
+        display none
+
+    .merchant-showcase__seperator
+      display block
+      @media(min-width 768px)
+        display none
+
+    & h2
+      margin-top 20px
+      margin-bottom 15px
+      font-size 16px
+
+  &__image
+    display inline-block!important
+    position relative
+    width 104px
+    height 104px
+    transition all .2s ease-in-out
+    border-radius 50%
+
+    &--content
+      display block
+      @media(min-width 768px)
+        display none
+
+.merchant-showcase__box.active
+  .merchant-showcase__image
+    transform scale(1.1)
+    margin 0 auto
+    border-radius 50%
+
+    @media(min-width 768px)
+      width 130px
+      height 130px
+
+  .merchant-showcase__box--content
+    display block
+
+  .merchant-showcase__seperator
+    display block

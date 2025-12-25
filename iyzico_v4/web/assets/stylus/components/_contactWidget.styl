@@ -1,0 +1,190 @@
+.contactBg
+  height auto
+  background-image: url('../images/content/contactBg.svg')
+  background-repeat no-repeat
+  background-size 100% 100%
+  background-position top
+  padding 80px 0
+  z-index 100
+  -webkit-mask-size auto 300px
+  mask-size auto 300px
+  position relative
+
+  @media (max-width 1024px)
+    background-size 130% 390px
+    padding 0
+
+  @media (max-width 768px)
+    background-size 100% 100%
+    background-image: url('../images/content/contactBg-768.svg')
+    padding 0
+
+  @media (max-width 640px)
+    background-image: url('../images/content/mobil-contact.svg')
+    padding 30px 0 0 0
+    background-size 100% 380px
+
+  .container
+    @media (max-width 768px)
+      max-width 100%
+      padding 0 20px
+
+.contactWidget
+
+  .container
+    display flex
+    flex-direction column
+    padding 65px 0
+    @media (max-width 640px)
+      padding 15px 0 50px 0
+
+    .title
+      font-size 24px
+      font-weight bold
+      line-height normal
+      padding-left 15px
+      max-width 370px
+
+      @media (max-width 768px)
+        font-size 16px
+        max-width 280px
+
+      @media (max-width 640px)
+        margin-bottom 5px
+
+    .contentWrap
+      display flex
+      flex-direction row
+
+      @media (max-width 768px)
+        flex-wrap wrap
+        flex-direction column
+
+      .mobileWidth
+        @media (max-width 768px)
+          display flex
+          align-items flex-start
+
+      .contentBox
+        font-size 18px
+        line-height 1.67
+        color #848484
+        flex 1
+        margin 15px
+        padding-top 15px
+
+        @media (max-width 768px)
+          font-size 12px
+          max-width 100%
+          flex auto
+          margin 10px 15px
+          padding 0
+
+        @media (max-width 640px)
+          margin 5px 20px
+
+
+        p
+          padding-bottom 0
+
+          @media (max-width 768px)
+            font-size 12px
+            line-height 1.67
+
+        b
+          font-weight 600
+
+        .contact
+          font-size 18px
+          line-height 1.11
+          color $clear-blue
+          font-weight bold
+          display flex
+          flex-direction column
+          justify-content flex-end
+          height 100%
+
+          @media (max-width 768px)
+            flex-direction column
+            font-size 16px
+
+          i
+            margin-right 10px
+
+          .phoneDescription
+            padding-bottom 20px
+            color #848484
+            font-weight normal
+            font-size 14px
+            line-height 22px
+
+            strong
+              font-weight 700
+
+          .phone
+            display flex
+            padding-bottom 5px
+
+            a
+              color $clear-blue
+              text-decoration none
+
+              &:hover
+                color $clear-blue
+                text-decoration none
+
+              &:active
+                color $clear-blue
+                text-decoration none
+
+              &:focus
+                color $clear-blue
+                text-decoration none
+
+          .mail
+            display flex
+            margin-left 0
+
+            a
+              color $clear-blue
+              text-decoration none
+
+              &:hover
+                color $clear-blue
+                text-decoration none
+
+              &:active
+                color $clear-blue
+                text-decoration none
+
+              &:focus
+                color $clear-blue
+                text-decoration none
+
+
+
+.google-maps
+  position relative
+  height 0
+  overflow hidden
+  padding-bottom 20%
+  z-index 10
+  margin-top -180px
+
+  @media (max-width 1024px)
+    padding-bottom 30%
+
+  @media (max-width 768px)
+    padding-bottom 40%
+    margin-top -50px
+
+  @media (max-width 640px)
+    padding-bottom 100%
+
+
+  iframe
+    left 0
+    top 0
+    height 100%
+    width 100%
+    position absolute

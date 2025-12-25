@@ -1,0 +1,74 @@
+.contactHero
+  .iyzi-container
+
+    .newHeaderComponent
+      padding-top 80px
+      background-image none
+      flex-direction row
+      padding 0 15px
+      width 100%
+
+      @media(max-width 1023px)
+        flex-direction column-reverse
+        padding 0 48px 44px 48px
+
+      @media(max-width 767px)
+        padding 0 8px
+
+      .content
+        height 100%
+        display flex
+        align-items flex-start
+        justify-content center
+        flex-direction column
+        padding-right 15px
+        flex 1
+
+        @media(max-width 1023px)
+          padding-right 0
+
+        h1
+          font-size 58px
+          line-height 80px
+          color $gray-900
+          font-weight bold
+
+          @media(max-width 767px)
+            font-size 34px
+            line-height normal
+
+        p
+          color $gray-900
+          font-size 24px
+          line-height normal
+          padding-top 16px
+
+          @media(max-width 767px)
+            font-size 16px
+            line-height 25px
+            padding-top 8px
+
+      .imgResp
+        display flex
+        padding-left 15px
+        flex 1
+
+        @media(max-width 1023px)
+          height 666px
+          padding 56px 0
+          justify-content flex-end
+
+          @media(max-width 767px)
+            height 278px
+            padding 16px 0px
+            justify-content center
+
+
+        img
+          width 100%
+
+          @media(max-width 1023px)
+            max-width 620px
+
+          @media(max-width 767px)
+            max-width 320px

@@ -1,0 +1,168 @@
+.teamJoinUs
+  background-color #fafafa
+  padding 85px 0
+
+  @media (max-width 768px)
+    padding 65px 0
+
+
+  @media (max-width 640px)
+    padding 20px 0
+
+  .container
+    display flex
+    flex-direction row
+
+    @media (max-width 768px)
+      flex-direction column
+
+    @media (max-width 640px)
+      flex-direction column
+
+    .leftContent
+      display flex
+      flex 1
+      flex-direction column
+      justify-content flex-start
+      padding 15px
+
+      .title
+        font-size 24px
+        line-height 29px
+        font-weight bold
+        color $clear-blue
+        padding-bottom 5px
+
+        @media (max-width 768px)
+          font-size 18px
+
+        @media (max-width 640px)
+          font-size 14px
+          line-height 17px
+
+      .subTitle
+        font-size 42px
+        font-weight 500
+        line-height normal
+        color #202020
+        padding-bottom 20px
+
+        @media (max-width 768px)
+          font-size 38px
+
+        @media (max-width 640px)
+          font-size 20px
+          line-height 24px
+
+      .description
+        font-size 18px
+        line-height 1.67
+        color #848484
+
+        @media (max-width 768px)
+          font-size 14px
+          line-height 1.71
+
+        @media (max-width 640px)
+          font-size 12px
+
+    .rightContent
+      display flex
+      flex 1
+      flex-wrap wrap
+
+      @media (max-width 768px)
+        flex-direction row
+
+      .formWrap
+        display flex
+        flex-direction column
+        font-size 18px
+        line-height 22px
+        font-weight bold
+        letter-spacing 2.6px
+        color #202020
+        padding 15px
+        width 100%
+        max-width 370px
+
+        @media (max-width 1024px)
+          max-width 310px
+
+        @media (max-width 768px)
+          max-width 340px
+
+        @media (max-width 640px)
+          font-size 16px
+          line-height 19px
+          max-width 100%
+
+        input
+          margin-top 10px
+          border none
+          height 52px
+          border-radius 10px
+          box-shadow 0 10px 25px 0 rgba(0, 0, 0, 0.1)
+          outline 0
+          padding 15px
+          letter-spacing 2.6px
+          font-weight normal
+
+        input.error
+          border 1px solid red !important;
+
+        .inputFileLabel
+          margin-top 10px
+          border none
+          height 52px
+          border-radius 10px
+          box-shadow 0 10px 25px 0 rgba(0, 0, 0, 0.1)
+          outline 0
+          padding 15px
+          letter-spacing 2.6px
+          font-weight normal
+          color #848484
+          background-color #fff
+
+        .custom-file
+          display flex
+          flex-direction column
+
+          .custom-file-input
+            display none
+
+          label
+            margin-bottom 0
+
+        .inputfile
+          width 100%
+          max-width 370px
+          height 70px
+          opacity 0
+          overflow hidden
+          position absolute
+          z-index 10
+
+        .inputfile.error
+          border 1px solid red !important;
+
+        .inputfile
+          &:focus label
+            outline 1px dotted #000
+            outline -webkit-focus-ring-color auto 5px
+
+        .inputfile label
+          pointer-events none
+
+      .buttonGroup
+        display flex
+        align-items center
+        justify-content flex-end
+        width 100%
+        padding 45px
+
+        @media (max-width 640px)
+          align-items center
+          justify-content center
+          margin 80px 0 30px 0
+          padding 0

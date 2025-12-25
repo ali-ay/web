@@ -1,0 +1,155 @@
+.gTGFullBox
+  display flex
+  justify-content center
+  padding 120px 0 0 0
+
+  @media(max-width 767px)
+    padding 72px 0 0 0
+
+  .iyziTabs
+    width 100%
+
+    .iyzi-container
+      display flex
+      flex-wrap wrap
+      padding 0 15px
+
+      @media (max-width 767px)
+        padding 0 8px
+
+      .nav-tabs
+        padding 0
+        margin 0
+        justify-content center
+
+        li
+          padding 0 35px
+
+          @media(max-width 767px)
+            padding 0 8px
+
+          a
+            font-size 24px
+            width 232px
+            text-align center
+            font-weight normal
+
+            @media(max-width 767px)
+              font-size 16px
+              width 132px
+              margin 0
+
+        .active
+          a
+            font-weight bold
+
+      .tab-content
+        ul
+          justify-content center
+          margin 0
+
+          @media(max-width 767px)
+            padding 0
+
+
+          li
+            max-width 770px
+
+            @media(max-width 767px)
+              &:last-child
+                padding 0
+
+            .container
+              padding 0 !important
+              border-radius 10px
+              overflow hidden
+
+              @media(max-width 767px)
+                max-width 100%
+
+      .boxWrap
+        display inline-block
+        flex-wrap wrap
+        justify-content flex-start
+        color $gray-900
+        padding-top 72px
+
+        @media (max-width 960px)
+          padding-top 80px
+
+        .imgWrap
+          position relative
+
+          .video-responsive
+            padding-bottom 56.25%
+            position relative
+            height 100%
+            width 100%
+
+            @media(max-width 768px)
+              margin-top 0px
+
+            iframe
+              left 0
+              top 0
+              height 100%
+              width 100%
+              position absolute
+
+          img
+            width 100%
+            margin-bottom 0
+
+            @media(max-width 767px)
+              height 100%
+
+          .bundle
+            position absolute
+            top 24px
+            left -30px
+
+            @media (max-width 767px)
+              top -24px
+              left 16px
+
+            img
+              box-shadow 0 10px 20px 0 rgba(52, 58, 64, 0.32)
+
+              @media (max-width 767px)
+                box-shadow 0 6px 12px 0 rgba(52, 58, 64, 0.32)
+                width 120px
+                height 48px
+
+        h4
+          font-size 34px
+          line-height normal
+          font-weight bold
+          padding 40px 0 24px 0
+          display block
+
+          @media (max-width 767px)
+            font-size 24px
+            padding 24px 0
+
+        p
+          font-size 16px
+          line-height 1.56
+          font-weight normal
+          padding-bottom 40px
+          color $gray-900
+
+          @media (max-width 767px)
+            padding-bottom 24px
+
+        .buttonBox
+          width 100%
+          max-width 270px
+
+          @media (max-width 767px)
+            max-width none
+
+          .basic
+            border-color #1e64ff
+            width 100%
+            display flex
+            justify-content center

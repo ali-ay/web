@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="661px" height="484px" viewBox="0 0 661 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F9F1F52E-3168-44EB-B396-C487995F7A0D</title>
+    <defs>
+        <linearGradient x1="90.2554899%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="00---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="006.0.0_D_iyiden-iyiye" transform="translate(479.000000, -1511.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-9" transform="translate(0.000000, 1462.000000)">
+                <g id="Group-3" transform="translate(-479.000000, 49.000000)">
+                    <path d="M59.44125,0 C26.613829,0 0,27.0824889 0,60.5 L0,423.5 C0,456.917511 26.613829,484 59.44125,484 L508.193627,484 C530.358609,484 550.679591,471.453644 560.914053,451.437556 L653.748077,269.942933 C658.144087,261.338489 660.379078,251.932756 660.458333,242.516267 L660.458333,241.483733 C660.379078,232.067244 658.144087,222.661511 653.748077,214.062444 L560.914053,32.5624444 C550.679591,12.5517333 530.358609,0 508.193627,0 L59.44125,0 Z" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

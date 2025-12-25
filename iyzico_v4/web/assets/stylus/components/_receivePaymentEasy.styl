@@ -1,0 +1,132 @@
+.receivePaymentEasy
+  width 100%
+  background-image: url('../images/content/receivePaymentEasy-bg.svg')
+  background-color #fff
+  margin 20px 0
+  background-repeat no-repeat
+  background-position right
+  margin-top 100px
+  margin-bottom 100px
+
+  @media (max-width 768px)
+    margin-top 80px
+    margin-bottom 80px
+
+  @media (max-width 640px)
+    background-image: url('../images/content/pink_mobile.svg')
+    margin-top 50px
+    margin-bottom 50px
+
+  .container
+    display flex
+
+    @media (max-width 640px)
+      flex-direction column-reverse
+      padding 0 20px
+
+    .content
+      display flex
+      flex 1
+      justify-content center
+      align-items flex-start
+      flex-direction column
+      padding 80px 0
+
+      @media (max-width 640px)
+        padding 50px 0 0 0
+
+      .widgetSubTitle
+        padding 5px 0 60px 0
+
+        @media (max-width 768px)
+          padding 5px 0 30px 0
+
+        @media (max-width 640px)
+          padding 5px 0 15px 0
+
+      .widgetDescription
+        @media (max-width 768px)
+          font-size 14px
+          line-height 1.71
+
+        @media (max-width 640px)
+          font-size 12px
+          padding-bottom 15px
+
+      span
+        font-size 24px
+        font-weight bold
+        line-height normal
+
+        @media (max-width 768px)
+          font-size 18px
+
+        @media (max-width 640px)
+          font-size 16px
+
+      ul
+        list-style none
+        padding 15px 0
+
+        @media (max-width 640px)
+          padding 0
+
+        li
+          font-size 18px
+          line-height 1.67
+          padding 20px 0
+          display inline-flex
+          align-items center
+
+          @media (max-width 768px)
+            font-size 14px
+            line-height 1.71
+
+          @media (max-width 640px)
+            padding 7px 0
+            font-size 12px
+
+          span
+            font-size 28px
+            color $clear-blue
+            font-weight 500
+            background-color #fff
+            border 2px solid #e9e9e9
+            border-radius 25px
+            min-width 45px
+            height 45px
+            margin-right 15px
+            display inline-flex
+            align-items center
+            justify-content center
+
+            @media (max-width 640px)
+              font-size 18px
+              font-weight 500
+              min-width 25px
+              height 25px
+
+
+      .buttonGroup
+        flex-wrap wrap
+
+        @media (max-width 640px)
+          flex-direction column
+
+        .button
+          @media (max-width 640px)
+            padding 0 15px
+
+
+    .contentImage
+      display flex
+      flex 1
+      justify-content center
+      align-items center
+
+      @media (max-width 640px)
+        padding-top 30px
+
+
+  img
+    width 100%

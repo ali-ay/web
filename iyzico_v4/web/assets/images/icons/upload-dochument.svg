@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F89F590F-D375-4659-AD6D-BCAB4F758501</title>
+    <g id="04---Merchant" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="006.0.2-Success" transform="translate(-535.000000, -774.000000)" stroke="#1E64FF" stroke-width="3">
+            <g id="Group-28" transform="translate(535.000000, 774.000000)">
+                <g id="drawer-envelope" transform="translate(1.000000, 1.000000)">
+                    <path d="M66.5,63.5 C66.5,66.8137085 63.8137085,69.5 60.5,69.5 L9.5,69.5 C6.1862915,69.5 3.5,66.8137085 3.5,63.5 L3.5,51.5 L66.5,51.5 L66.5,63.5 Z" id="Path"></path>
+                    <path d="M51.5,0.5 L44,8 C42.86,9.407 39.332,9.5 39.332,9.5 L21.668,9.5 C21.668,9.5 18.14,9.407 17,8 L9.5,0.5" id="Path"></path>
+                    <polyline id="Path" points="9.5 51.5 9.5 0.5 51.5 0.5 51.5 17"></polyline>
+                    <line x1="30.5" y1="9.593" x2="30.5" y2="26" id="Path"></line>
+                    <path d="M32.132,51.5 L26.468,37.901 C26.1408902,37.1189644 26.1382857,36.2389315 26.4607609,35.4549734 C26.7832361,34.6710154 27.4043035,34.0475252 28.187,33.722 L57.695,21.422 C59.3253479,20.7444801 61.1964268,21.5149243 61.877,23.144 L69.254,40.844 C69.9313106,42.4735181 69.1606863,44.3436917 67.532,45.023 L52.007,51.5" id="Path"></path>
+                    <path d="M27.08,39.377 L44.675,40.016 C46.9323893,40.3037416 49.1726602,39.3703905 50.558,37.565 L62.492,24.623" id="Path"></path>
+                    <line x1="69.5" y1="51.5" x2="0.5" y2="51.5" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

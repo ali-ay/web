@@ -1,0 +1,19 @@
+<svg preserveAspectRatio='none' viewBox="0 0 1440 788" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="-1.14588153%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#EFF8FE" offset="0%"></stop>
+            <stop stop-color="#F4F8FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="001.1.5-Kurumsal-Referanslar" fill="url(#linearGradient-1)">
+            <g id="Hero">
+                <g id="Group-3">
+                    <path d="M0,661.9997 L0,-0.0003 L1440,-0.0003 L1440,788.002982 C1413.246,788.2137 1387.761,777.9157 1366,770.9997 C1315.792,755.0427 1269.1,741.6137 1225,720.9997 C1148.757,685.3597 1073.6,657.1767 1002,616.9997 C917.966,569.8457 830.028,523.9077 724,499.9997 C507.971,451.2887 281.664,506.4407 133,580.9997 C118.85,588.0967 45.113,629.0637 0,661.9997" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

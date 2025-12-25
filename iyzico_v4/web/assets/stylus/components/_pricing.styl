@@ -1,0 +1,150 @@
+.pricing
+  display flex
+  background-color #f4fbfa
+  padding 80px 0
+
+  @media (max-width 767px)
+    padding 48px 0
+
+  .iyzi-container
+    flex-direction column
+    align-items center
+
+    .button
+      @media (max-width 768px)
+        width 90%
+        justify-content center
+
+    h2
+      text-align center
+      font-size 40px
+      color $gray-900
+      line-height normal
+      font-weight bold
+
+      @media (max-width 767px)
+        font-size 24px
+        max-width 278px
+
+    p
+      font-size 24px
+      color $gray-900
+      padding 24px 0 64px 0
+
+      @media (max-width 768px)
+        padding 24px 0 18px 0
+
+      @media (max-width 767px)
+        padding 8px 0 24px 0
+        text-align center
+        font-size 16px
+        line-height 25px
+
+    ul
+      list-style none
+      padding 0 0 64px 0
+      margin 0
+      display flex
+
+      @media (max-width 768px)
+        flex-wrap wrap
+        justify-content center
+        padding 0 0 32px 0
+
+      li
+        list-style none
+        display flex
+        padding 0 20px
+        font-size 24px
+        color $gray-900
+        font-weight 500
+
+        @media (max-width 768px)
+          padding 16px 20px
+
+        @media (max-width 767px)
+          padding 0 32px 17px 32px
+          width 100%
+          justify-content space-between
+          font-size 16px
+          line-height 25px
+
+        img
+          margin-left 8px
+
+          @media (max-width 768px)
+            margin 0 0 0 8px
+
+          @media (max-width 767px)
+            width 24px
+
+    .subTitle
+      font-size 24px
+      font-weight 500
+      line-height normal
+      color $gray-800
+      padding 64px 0 16px 0
+
+      @media (max-width 768px)
+        padding 48px 0 16px 0
+
+      @media (max-width 767px)
+        font-size 16px
+        line-height 25px
+        padding 32px 0 16px 0
+
+    .button
+      min-width 230px
+      display flex
+      justify-content center
+      max-width 370px
+
+  .priceWrap
+    display flex
+    width 100%
+
+    @media (max-width 960px)
+      flex-direction column
+
+    .priceBox
+      color $gray-900
+      line-height normal
+      text-align center
+      display flex
+      flex 1
+      flex-direction column
+      align-items center
+
+      &:last-child
+        @media(max-width 960px)
+          margin-top 48px
+
+
+      .title
+        font-size 28px
+        font-weight bold
+
+        @media (max-width 767px)
+          font-size 16px
+          line-height 25px
+
+
+      .priceAndPercent
+        font-size 48px
+        line-height 1.4
+        font-weight 500
+
+        @media (max-width 767px)
+          font-size 30px
+          line-height 48px
+
+      .desc
+        font-size 24px
+        font-weight normal
+        padding 4px 0 40px 0
+
+        @media (max-width 767px)
+          font-size 14px
+          line-height normal
+          padding 0 0 24px 0
+

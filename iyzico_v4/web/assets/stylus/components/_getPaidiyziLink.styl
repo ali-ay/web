@@ -1,0 +1,67 @@
+.getPaidiyziLink
+  width 100%
+  background-image: url('../images/content/blue.svg?v=v4.0.28')
+  background-color #fff
+  background-repeat no-repeat
+  background-position right
+
+  @media (max-width 640px)
+    background-image: url('../images/content/blue_mobile.svg?v=v4.0.28')
+
+  .container
+    display flex
+    @media (max-width 640px)
+      flex-direction column-reverse
+      padding 0 20px
+    
+    .content
+      display flex
+      flex 1
+      justify-content center
+      align-items flex-start
+      flex-direction column
+      
+      .widgetTitle
+        @media (max-width 640px)
+          font-size 14px
+          padding-top 50px
+
+      .widgetSubTitle
+        padding 5px 0 20px 0
+
+        @media (max-width 640px)
+          font-size 20px
+          padding 5px 0 15px 0
+      
+      .widgetDescription
+        max-width 470px
+        margin-bottom 60px
+
+        @media (max-width 768px)
+          margin-bottom 20px
+          font-size 12px
+      
+      .buttonGroup
+        flex-wrap wrap
+
+        @media (max-width 640px)
+          flex-direction column
+
+        .button
+          @media (max-width 640px)
+            padding 0 15px
+
+    .contentImage
+      display flex
+      flex 1
+      justify-content center
+      align-items center
+
+      @media (max-width 640px)
+        padding-top 30px
+
+  img
+    width 100%
+
+  .flex-1
+    flex 1

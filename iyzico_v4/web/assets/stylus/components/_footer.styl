@@ -1,0 +1,477 @@
+.base-footer
+
+  section
+    display flex
+    width 100%
+
+footer
+  background-color $gray-900
+  display flex
+  justify-content center
+  background-repeat no-repeat
+  background-size cover
+
+  .footeriyzistart
+    @media (max-width 960px)
+      padding-left 0px !important
+
+    a
+      font-weight bold !important
+
+      @media (max-width 960px)
+        font-weight bold !important
+        font-size 18px !important
+        line-height 20px !important
+
+      span
+        color rgba(255,255,255,0.8)
+
+
+
+  .footerMenuMobile
+    @media (max-width 960px)
+      max-height 80px !important
+      border-bottom none !important
+
+  .footerLogo
+    align-items center
+    justify-content center
+    list-style none
+    margin 0
+
+    @media (max-width 960px)
+      padding 20px 0 0 0
+      flex-direction column
+
+    @media (max-width 960px)
+      justify-content center
+
+      img
+        text-align center
+        width 100%
+
+  .fQr
+    place-items flex-end
+    display flex
+
+    @media (max-width 960px)
+      max-height 250px !important
+      place-items center
+
+    li:first-child
+      padding-right 20px
+
+      @media (max-width 960px)
+        padding 0 0 20px 0
+
+
+    #ETBIS
+      background-color #ffffff
+      padding 8px
+
+  .container
+    color #fff
+    font-size 14px
+    padding-top 80px
+    display flex
+    flex-direction column
+
+    @media(max-width 1200px)
+      max-width calc(100% - 96px)
+
+    @media (max-width 960px)
+      padding-top 40px
+      max-width calc(100% - 40px)
+
+    .footerLocation
+      display flex
+
+      @media (max-width 960px)
+        padding 5px 0 0 0
+
+      .toolTip
+        width 100%
+
+        ul
+          li
+            padding-left 0px
+
+        .mobileBorderNone
+          @media (max-width 960px)
+            border none
+
+      .footerLocaitonCountry
+        padding 0 10px
+
+    .footerTop
+      display flex
+
+      @media (max-width 960px)
+        flex-direction column
+
+      .footerActive
+        max-height 100% !important
+        padding-bottom 20px
+
+      .icon--footer-minus
+        display none
+
+      .icon--icn-uparrow
+        display none
+
+        @media(min-width 961px)
+          display none !important
+
+      .menuOpen
+        @media (max-width 960px)
+          max-height none
+          padding-bottom 15px
+
+        .icon--footer-plus
+          display none
+
+        .icon--icn-downarrow
+          display none
+
+        .icon--icn-uparrow
+          display block
+
+        .icon--footer-minus
+          display none
+
+          @media (max-width 960px)
+            display block
+
+      ul
+        flex 1
+        list-style none
+        padding 0
+        margin 0
+
+        li
+          @media (max-width 960px)
+            font-weight bold
+            margin 0
+            border-bottom 1px solid #343a40
+          ul
+            margin-bottom 32px
+
+            @media (max-width 960px)
+              overflow hidden
+              max-height 62px
+              padding 16px 0
+              margin 0
+
+            li
+              border-bottom 0
+              padding 8px 0
+              margin 0
+
+              @media (max-width 960px)
+                padding 8px 0
+
+            li:first-child
+              padding 0 0 8px 0
+
+          li:last-child
+            padding 8px 0 0 0
+
+
+        .pB-16
+          padding-bottom 16px
+
+          @media (max-width 960px)
+            padding-bottom 0
+
+        li
+          font-size 14px
+          line-height normal
+
+          @media (max-width 960px)
+            font-size 16px
+            padding-right 0
+
+    .footerBottom
+      border-top solid 0.3px #fff
+      justify-content space-between
+      display flex
+      align-items center
+      padding 24px 0 20px 0
+
+      @media (max-width 960px)
+        margin 0 0 30px 0
+        border-top none
+        flex-direction row
+        align-items center
+        justify-content center
+
+      @media (max-width 960px)
+        height auto
+        flex-direction column
+        padding 0
+
+      .socialMedia
+        a
+          svg
+            fill #ffffff
+            width 32px
+            height 32px
+            margin-right 16px
+
+        @media (max-width 1200px)
+          display flex
+
+        @media (max-width 960px)
+          margin 15px 0 0 0
+          display inline-flex
+
+        @media (max-width 960px)
+          display none
+
+        i
+          margin-right 15px
+
+          @media (max-width 1200px)
+            margin-right 10px
+            width 24px
+            height 24px
+
+          @media (max-width 960px)
+            margin 7px
+
+      .contracts
+        display flex
+        height max-content
+
+        @media (max-width 960px)
+          justify-content flex-end
+          display flex
+          font-size 16px
+          width 100%
+
+        @media (max-width 960px)
+          justify-content space-between
+          padding-top 15px
+          flex-direction column
+          align-items center
+
+        a
+          padding-left 32px
+          display flex
+          height max-content
+
+          @media (max-width 960px)
+            padding 0 10px
+
+          @media (max-width 960px)
+            padding 8px 0
+
+
+    a
+      text-decoration none
+      color #fff
+      display inline-block
+
+      &:hover
+        color #fff
+
+      &:active
+        color #fff
+
+      &:focus
+        color #fff
+
+.footerMenuSubTitle
+  font-weight: 600
+  padding 0 0 0 0
+  font-size 18px
+
+  @media (max-width 960px)
+    padding-left 10px !important
+
+.footerMenuTitle
+  font-weight bold
+  font-size 24px !important
+
+  @media (max-width 960px)
+    display flex
+    justify-content space-between
+    align-items center
+    padding-left 0px !important
+
+  i
+    display none
+
+    @media (max-width 960px)
+     display flex
+
+
+  ul
+    list-style none
+
+    li
+      font-size 16px
+      padding-left 30px
+
+  img
+    margin-right 15px
+
+.footerMenuOnlyTitle
+  font-weight bolder
+  padding-bottom 15px
+  font-size 18px !important
+
+  @media (max-width 960px)
+    display flex
+    justify-content space-between
+    align-items center
+    padding-left 0px !important
+
+.blogBox
+  display flex
+  align-items end
+
+.blogWrap
+  @media (max-width 960px)
+    max-height 110px !important
+
+  .footerBlog
+    @media (max-width 960px)
+      border-bottom 1px solid
+
+  .footeriyzistart
+    @media (max-width 960px)
+      margin 15px 0
+      max-height 30px
+
+.locationWrap
+  height 149px
+  -webkit-backdrop-filter blur(5px)
+  background-color rgba(0, 0, 0, .7)
+  position sticky
+  bottom 0
+  color #fff
+
+.locationPopup
+  max-width 1200px
+  font-size 18px
+  line-height 1.67
+  padding-top 20px
+
+  .icon--pin
+    margin 0 5px 0 15px
+
+  .icon--flag-of-turkey
+    margin 5px 80px 0 5px
+
+  .icon--pin-gray
+    margin-top 5px
+
+  .icon--flag-gray
+    margin-top 5px
+
+  span
+    font-size 42px
+    font-weight 300
+    margin-right 15px
+
+  u
+    font-size 28px
+    font-weight 500
+    text-decoration underline
+    position relative
+    display inline-block
+    margin-left 5px
+
+  .icon--left-arrow
+    margin 10px
+
+.mR-30
+  margin-right -30px
+
+.fbBottom
+  @media(max-width 960px)
+    border-bottom 1px solid #343a40
+
+.shortFooter
+  .container
+    @media(max-width 960px)
+      max-width 100% !important
+      padding 0 48px !important
+
+    @media(max-width 767px)
+      padding 0px !important
+
+  .footerTop
+    @media(max-width 960px)
+      flex-direction unset !important
+      padding-top 44px !important
+
+    @media(max-width 767px)
+      flex-direction column !important
+      padding-top 20px !important
+
+    ul
+      .footerLogo
+        @media(max-width 767px)
+          border-bottom none !important
+
+        img
+          @media(max-width 960px)
+            width auto
+
+        .mB-32
+          @media(max-width 767px)
+            margin-bottom 0
+      li
+        .socialMedia
+          height 65px !important
+          display flex !important
+          align-items center !important
+          justify-content flex-end !important
+
+          @media(max-width 960px)
+            min-height 117px !important
+
+          @media(max-width 767px)
+            min-height auto
+            height auto !important
+            padding 31px 0 24px 0
+
+          a
+            margin-left 16px !important
+
+        @media(max-width 767px)
+          display flex
+          justify-content center
+
+        li:first-child
+          border-bottom none !important
+
+  .container
+    .footerBottom
+      .fQr
+        @media(max-width 960px)
+          flex-direction unset !important
+          padding-top 30px !important
+
+          @media(max-width 767px)
+            flex-direction column !important
+            padding-top 4px
+
+
+      .contracts
+        @media(max-width 960px)
+          flex-direction unset !important
+          padding-top 24px !important
+          justify-content center !important
+
+          @media(max-width 767px)
+            flex-direction column !important
+
+        a
+          padding 0 40px 0 0 !important
+
+          @media(max-width 767px)
+            padding 0 0 16px 0 !important
+
