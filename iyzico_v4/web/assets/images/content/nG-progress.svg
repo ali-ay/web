@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>92F0C980-6500-4862-A897-0F21F49E6275</title>
+    <defs>
+        <linearGradient x1="90.2554899%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#1E64FF" offset="0%"></stop>
+            <stop stop-color="#1E64FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="00---Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="004.0.0-Support-Detail" transform="translate(-159.000000, -856.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-4" transform="translate(135.000000, 784.000000)">
+                <g id="Group-27" transform="translate(24.000000, 24.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 48.000000)">
+                        <path d="M2.16,0 C0.967104,0 0,0.895288889 0,2 L0,14 C0,15.1047111 0.967104,16 2.16,16 L18.466944,16 C19.272384,16 20.010816,15.5852444 20.38272,14.9235556 L23.75616,8.92373333 C23.915904,8.63928889 23.99712,8.32835556 24,8.01706667 L24,7.98293333 C23.99712,7.67164444 23.915904,7.36071111 23.75616,7.07644444 L20.38272,1.07644444 C20.010816,0.414933333 19.272384,0 18.466944,0 L2.16,0 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

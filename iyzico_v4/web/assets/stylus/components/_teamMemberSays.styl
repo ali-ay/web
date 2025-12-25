@@ -1,0 +1,62 @@
+.teamMemberSays
+  width 100%
+  background-image: url('../images/content/blue.svg?v=v4.0.28')
+  background-color #fff
+  background-repeat no-repeat
+  background-position right
+  margin-bottom 50px
+
+  .container
+    display flex
+    flex-direction row
+    padding 0
+
+    @media (max-width 640px)
+      flex-direction column-reverse
+
+    .image
+      display flex
+      flex 5
+
+    .content
+      display flex
+      flex 7
+      flex-direction column
+      justify-content center
+      align-items flex-start
+      color #202020
+      padding 158px 0 141px 0
+
+      @media (max-width 640px)
+        padding 60px 0 10px 0
+        align-items center
+
+      p
+        font-size 22px
+        font-weight 500
+        line-height 1.27
+        padding 34px 0 44px 0
+
+        @media (max-width 640px)
+          padding 17px 0 20px 0
+          text-align center
+          font-size 14px
+
+      span
+        font-size 16px
+        font-weight 300
+        padding-bottom 50px
+
+        @media (max-width 640px)
+          font-size 14px
+          padding-bottom 15px
+
+      .buttonText
+        margin-left -15px
+
+        @media (max-width 640px)
+          margin 0
+
+        i
+          @media (max-width 640px)
+            margin-left 10px

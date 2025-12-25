@@ -1,0 +1,277 @@
+.newPersonalMerchant
+  .newMerchantContainer
+    max-width 776px
+    padding-top 24px
+
+    @media(max-width 960px)
+      flex-direction column
+      max-width 596px
+
+    .content
+      text-align center
+      h2
+        font-size 48px
+        line-height 1.4
+
+        @media(max-width 960px)
+          text-align center
+
+        @media(max-width 767px)
+          font-size 24px
+          line-height normal
+
+      p
+        font-size 24px
+        color $gray-900
+        line-height normal
+        padding 16px 0 54px 0
+
+        @media(max-width 960px)
+          text-align center
+          line-height 48px
+          padding 24px 0 48px 0
+
+        @media(max-width 767px)
+          font-size 16px
+          line-height 2
+          padding 8px 0 24px 0
+
+      .imageWrap
+        display flex
+        justify-content center
+
+        @media(max-width 960px)
+          display none
+
+        a
+          margin 0 16px
+
+    .mobileContent
+      display none
+
+      @media(max-width 960px)
+        width 100%
+        display flex
+        justify-content center
+        flex-direction column
+
+        .imageWrap
+          display flex
+          justify-content center
+
+          @media(max-width 767px)
+            padding-top 16px
+
+          img
+            @media(max-width 767px)
+              max-width 248px
+
+        .buttonGroup
+          display none
+
+          @media(max-width 960px)
+            display flex
+            justify-content center
+            margin 48px 0 0 0
+
+          a
+            min-width 270px
+            justify-content center
+
+    .formWrap
+      max-width 470px
+      padding 32px
+      background-color $gray-200
+      border-radius 16px
+
+      @media(max-width 960px)
+        max-width 576px
+        width 100%
+        display flex
+        justify-content center
+
+      @media(max-width 767px)
+        padding 24px 16px
+
+      .newForm
+        padding 0
+
+        @media(max-width 960px)
+          max-width 403px
+
+        .title
+          font-size 40px
+          padding-bottom 40px
+          line-height normal
+
+          @media(max-width 767px)
+            font-size 24px
+            padding-bottom 22px
+
+        .buttonGroup
+          display flex
+          flex-direction column
+          margin-top 9px
+
+          .button
+            margin-bottom 16px
+
+          button
+            max-width 100%
+            width 100%
+            justify-content center
+
+          .contractText
+            max-width 100%
+            margin 0
+            text-align center
+            padding-top 16px
+            border-top 1px solid #f1f3f5
+
+        .inputWrap
+          padding 0 0 24px 0
+          position relative
+
+          @media(max-width 767px)
+            padding 0 0 16px 0
+
+          i
+            position absolute
+            top 25px
+            left 16px
+
+          #personalPhone
+            padding-left 46px
+
+          .input-form
+            padding 19px 15px
+            font-size 16px
+            line-height 1.5
+            font-weight 500
+            border-radius 8px
+            border 1px solid $gray-400
+            color $gray-700
+
+
+            &::placeholder
+              color $gray-700
+
+
+
+          .pass-eye
+            top 8px
+
+          input[type="password"]
+
+            &::placeholder
+              letter-spacing normal
+
+          .tooltiptext
+            border-bottom 1px solid #f1f3f5
+            padding 16px 0
+
+            span
+              color #868e96
+
+          .checkBoxWrap
+            padding-bottom 16px
+            border-bottom 1px solid #f1f3f5
+
+            @media(max-width 1000px)
+              justify-content space-between
+              flex-direction row-reverse
+
+            label
+              color $gray-700
+              display flex
+              align-items center
+
+              @media(max-width 1000px)
+                width 100%
+
+
+              &:before
+                background-color $gray-200
+                border 2px solid $gray-400
+
+                @media(max-width 1000px)
+                  right -24px
+                  left unset
+
+              &:after
+                @media(max-width 1000px)
+                  right -20px
+                  left unset
+
+              a
+                font-weight bold
+                color $clear-blue
+
+
+  .iyziModal
+    .iyziModalWrap
+      max-width 570px
+
+      @media(max-width 767px)
+        padding 0 8px !important
+
+      .iyziModalContainer
+        max-height 391px
+
+        @media(max-width 767px)
+          max-height 375px
+
+        .iyziModalContent
+          max-width 400px
+          margin 0px auto
+          flex-direction column
+          height auto
+          padding-top 40px
+
+          .contentWrap
+            padding 0
+            background-color #ffffff
+
+            .content
+              padding 0
+
+              @media(max-width 767px)
+                padding 16px 16px 0 16px !important
+
+
+              h2
+                font-size 28px
+
+                strong
+                  font-size 28px
+                  line-height normal
+
+              p
+                font-size 16px
+                line-height 1.56
+                color $gray-900
+                padding 16px 0 32px 0
+
+                @media(max-width 767px)
+                  padding 16px 0 8px 0
+
+          .formWrap
+            padding 0
+            width 100%
+
+            .newForm
+              padding 0 16px
+
+              .inputWrap
+                max-width 100%
+
+              .reSend
+                max-width 100%
+                margin-bottom 24px
+
+              .buttonGroup
+                a
+                  max-width 100%
+
+.phone-input
+  padding 0 0 0 5px

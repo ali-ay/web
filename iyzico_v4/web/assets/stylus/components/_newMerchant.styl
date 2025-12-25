@@ -1,0 +1,433 @@
+.new-merchant
+
+  .iyzi-site.menu-open
+    height 100%
+
+  .iyzi-site
+    height auto
+    margin 0px auto
+
+  .navigationHeaderMenu
+    margin-top 0
+
+  .base-main
+    z-index 3
+    padding 56px 0 120px 0
+
+    @media (max-width 768px)
+      padding 56px 0 44px 0
+
+    @media (max-width 767px)
+      padding 24px 0 44px 0
+
+  .base-header
+    position inherit
+
+  .cover-background
+    z-index -10
+
+.info-container
+  display flex
+  flex 1
+  align-items flex-start
+  justify-content center
+  padding 0 15px
+  flex-direction column
+
+  .akImage
+    @media (max-width 768px)
+      display none
+
+  .haveAccount
+    display flex
+
+    @media (max-width 768px)
+      display none !important
+
+
+.newMerchantContainer
+  max-width 1000px
+  margin 0px auto
+  display flex
+  flex-direction row-reverse
+
+  @media (max-width 768px)
+    flex-direction column-reverse
+
+
+  .haveAccount
+    display flex
+    flex-direction column
+    align-items flex-start
+    padding-top 32px
+    margin-bottom 48px
+
+    @media (max-width 767px)
+      padding-top 16px
+      width 100%
+      text-align center
+
+    span
+      font-size 24px
+      color $gray-800
+      font-weight 500
+      padding-bottom 16px
+
+    .buttonGroup
+      margin 0
+
+      @media (max-width 767px)
+        padding 0 16px
+        width 100%
+
+      .basic
+        padding 15px 24px
+
+        @media (max-width 767px)
+          width 100%
+
+        i
+          margin-right 16px
+
+  .title
+    font-size 48px
+    font-weight bold
+    line-height 1.4
+    color $gray-900
+    text-align left
+    padding 0 0 16px 0
+
+    @media(max-width 768px)
+      font-size 58px
+      line-height 1.38
+      text-align center
+      max-width 672px
+
+    @media(max-width 767px)
+      font-size 24px
+      padding 0 0 8px 0
+      display flex
+      flex-direction column
+
+    span
+      color $clear-blue
+
+  .newMerchantForm
+    align-self center
+    display flex
+    flex-direction column
+    flex 1
+    padding 0 15px
+
+    @media(max-width 960px)
+      margin 0px auto
+
+    @media(max-width 768px)
+      max-width 576px
+      width 100%
+
+    .buttonGroup
+      margin-top 15px
+      justify-content center
+
+      a
+        text-align center
+
+    .haveAccount
+      display none
+
+      @media (max-width 768px)
+        display flex
+        margin 0px auto
+        align-items center
+
+      .akImage
+        @media (max-width 768px)
+          display flex !important
+          margin-top 32px
+
+      .buttonGroup
+        @media (max-width 768px)
+          margin-top 0
+
+
+  .newMerchantContent
+    align-self center
+
+    a
+      font-size 16px
+      font-weight 700
+      display block
+
+      br
+        line-height 10px
+
+    ul
+      list-style none
+      padding-left 0
+
+      @media (max-width 768px)
+        margin-bottom 48px
+
+      @media (max-width 767px)
+        margin-bottom 24px
+
+      li
+        list-style none
+        font-size 24px
+        line-height 2
+
+        @media (max-width 768px)
+          text-align center
+
+        @media (max-width 767px)
+          font-size 16px
+          line-height 2
+          text-align left
+
+        i
+          font-style normal
+          color $clear-blue
+          font-weight 500
+
+  .formLoginButton
+    font-size 16px
+    letter-spacing 1px
+    text-align left
+
+    a
+      color #4cc1fc
+      text-decoration none
+
+    @media(max-width 768px)
+      padding 30px 0
+  .form-wrap
+    width 100%
+    background-color #f8f9fa
+    padding 32px 32px 18px 32px
+    font-size 12px
+    color #4a4a4a
+    border-radius 16px
+
+    @media(max-width 768px)
+      padding 30px 10px
+
+    @media(max-width 767px)
+      padding 24px 8px
+
+    p
+      font-size 14px
+      color $gray-600
+      line-height 1.57
+
+    .formTitle
+      font-size 40px
+      font-weight bold
+      text-align center
+      padding 0 0 32px 0
+      color $gray-900
+      line-height normal
+
+      @media(max-width 767px)
+        font-size 24px
+        padding 0 0 14px 0
+
+    .input-wrap
+      display flex
+      flex-direction column
+
+      .padBot
+        padding 34px 0 0 0
+        text-align center
+        max-width 360px
+        margin 0px auto
+
+        .buttonText
+          font-size 14px !important
+          padding 0
+          font-weight bold
+          color $clear-blue
+
+          &:hover
+            color $clear-blue
+            font-weight bold
+
+    .formIcon
+        width 15px
+        height 50px
+        float left
+        margin-right 5px
+        margin-left -5px
+
+        i
+          display none
+          margin-top 15px
+
+      .input-container
+        width 100%
+        display flex
+        margin 8px 0 16px 0
+        overflow hidden
+        position relative
+        flex-direction column
+
+        @media (max-width 767px)
+          padding 8px 0
+
+        label
+          border none !important
+          position absolute
+          top 6px
+          left 16px
+
+        i
+          width 26px
+          position absolute
+          top 25px
+          left 25px
+
+        .pass-eye
+          position absolute
+          top 20px
+          right 16px
+          display block
+
+          img
+            width 24px
+
+          img:last-child
+            display none
+
+        .eyeToogle
+          img:first-child
+            display none
+
+          img:last-child
+            display block
+
+      .password-field-holder
+        flex-direction column
+        border none
+
+        input
+          border 1px solid #ced4da
+          border-radius 8px
+
+      .pRelative
+        position relative
+        display flex
+
+        .formIcon
+          position absolute
+          top 15px
+
+      input.valid ~ .formIcon i.icon--inputvaluetrue
+        display block !important
+
+      input.valid ~ .formIcon i.icon--inputvaluefalse
+        display none !important
+
+      input.error ~ .formIcon i.icon--inputvaluefalse
+        display block !important
+
+      input.error ~ .formIcon i.icon--inputvaluetrue
+        display none !important
+
+    input
+      border none
+      height 64px
+      width 100%
+      padding 0 0 0 16px
+      color $gray-700
+      font-size 16px
+      line-height 1.5
+      font-weight 500
+      border solid 1px #ced4da
+      border-radius 8px
+
+
+
+      &::placeholder
+        color $gray-700
+
+
+      &:focus
+        outline none
+
+    .error
+      border solid 1px #f03e3e !important
+      background-color #ffe3e3 !important
+      border-radius 8px
+
+    input[type="submit"]
+      font-size 16px
+      color #ffffff
+      border-radius 100px
+      min-width 260px
+      padding 0px
+      border none
+      max-height 56px
+      margin 0px auto
+      font-weight bold
+      display block
+      position relative
+
+    input[name="password"]
+      letter-spacing 16px
+
+      &::placeholder
+        letter-spacing 0px
+
+    .mB-10
+      margin-bottom 10px
+
+  .signup-form-final
+    @media (max-width 768px)
+      max-width 384px
+      margin 0px auto
+
+    .row
+      margin-left 0
+      margin-right 0
+
+      .button
+        width 100%
+        display flex
+        justify-content center
+
+
+
+    #recaptcha-holder-new-member-page
+      display flex
+      justify-content center
+      margin-left 5px
+
+    iframe
+      margin 0px auto
+
+    .captchaWrap
+      display flex
+      justify-content center
+      position relative
+
+    #captchaCheck-error
+      font-size 0
+      border none
+      width 14px
+      height 14px
+      position relative
+      left -3px
+      top -50px
+      background-image url(../images/sprite/common/inputvalue-false.png)
+      background-image :
+        -webkit-image-set(
+          url(../images/sprite/common/inputvalue-false.png) 1x,
+          url(../images/sprite/common/inputvalue-false@2x.png) 2x,
+        );
+      background-image:
+        image-set(
+          url(../images/sprite/common/inputvalue-false.png) 1x,
+          url(../images/sprite/common/inputvalue-false@2x.png) 2x,
+        );
+      background-size 14px 14px
+

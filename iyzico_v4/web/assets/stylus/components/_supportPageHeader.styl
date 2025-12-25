@@ -1,0 +1,32 @@
+.supportPageHeader
+  height auto
+  background-image: url('../images/content/sub-page-bg.svg')
+  background-repeat no-repeat
+  background-size 100% 788px
+  background-position top
+
+  @media (max-width 768px)
+    background-image: url('../images/content/support-header-768.svg')
+    background-size 100% 420px
+
+  @media (max-width 640px)
+    background-image: url('../images/content/sub-page-bg.svg')
+    background-size 100% 215px
+
+
+  h1
+    display flex
+    flex-direction column
+    align-items center
+    padding-bottom 30px
+    text-align center
+
+    @media (max-width 640px)
+      padding-bottom 15px
+
+  .whoWeAreTabs
+    .container
+      @media (max-width 640px)
+        padding 50px 15px 0 15px
+        overflow scroll
+        display inline-block

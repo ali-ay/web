@@ -1,0 +1,298 @@
+.campaignLP
+  .campaignSlider
+    padding 40px 0 80px 0
+
+    @media(max-width 1023px)
+      padding 40px 32px
+
+    @media(max-width 767px)
+      padding 24px 0
+
+  .pressHeaderContent
+    padding-top 150px
+
+    @media (max-width 640px)
+      padding 100px 20px 0 20px
+
+
+  .iyziTabs
+    margin 0 0 120px 0
+    position relative
+
+    @media(max-width 767px)
+      margin 0 0 8px 0
+
+    .nav
+      &:before
+        display none
+
+      &:after
+        display none
+
+    .nav-tabs
+      width calc(100% - 32px)
+      margin 0 16px
+
+      @media(max-width 960px)
+        width calc(100% - 96px)
+        margin 0 48px
+
+      @media(max-width 767px)
+        margin 0
+        width 100%
+        justify-content space-between
+
+      li
+        a
+          font-weight normal
+          font-size 24px
+
+          @media(max-width 767px)
+            font-size 16px
+
+      .active
+        a
+          font-weight bold
+
+    .iyzi-container
+      @media(max-width 767px)
+        padding 0 8px
+
+      .tab-content
+        #menu2
+          li
+            .subDesc
+              color $orange-pink
+              font-weight bold
+
+        ul
+          margin-top 28px
+          flex-wrap wrap
+          margin 28px -15px 0 -15px
+
+          @media (max-width 960px)
+            padding 0 48px
+            margin 28px -8px 0 -8px
+
+          @media(max-width 767px)
+            padding 0
+            align-items center
+            margin 22px 0 0 0
+
+          li
+            display flex
+            flex-direction column
+            align-items flex-start
+            justify-content space-between
+            padding 24px
+            box-shadow none
+            background-color $gray-200
+            letter-spacing normal
+            max-width 370px
+            margin 15px
+            border-radius 16px
+
+            @media (max-width 960px)
+              max-width 328px
+              padding 16px
+              margin 8px
+
+            @media (max-width 767px)
+              padding 16px 16px 24px 16px
+              margin 12px 0
+
+						.emptystate
+              width 100%
+              max-width unset !important
+              display block !important
+              background-color #ffffff !important
+              margin-top 30px !important
+
+              @media(max-width 767px)
+                padding 0 !important
+
+              .emptyicon
+                display flex
+                flex-direction column
+                align-items center
+                width 100%
+                min-height 656px
+
+                @media(max-width 960px)
+                  min-height 518px
+
+                @media(max-width 767px)
+                  min-height 480px
+
+                span
+                  text-align center
+                  font-size 24px
+
+                img
+                  width fit-content
+                  margin-bottom 30px
+
+                  @media(max-width 767px)
+                    width 124px
+                    height 124px
+
+            .campaignNews
+              background-color $gray-200
+              max-width unset
+              width 100vw
+              position absolute
+              left 0
+              margin-top -201px
+
+              @media(max-width 960px)
+                display contents
+
+              .newsWrap
+                max-width 1200px
+                margin 0px auto
+                display flex
+
+                @media(max-width 960px)
+                  flex-direction column
+
+                img
+                  margin -54px 0 32px 0
+
+                  @media(max-width 960px)
+                    margin -116px auto 0 auto
+
+                  @media(max-width 767px)
+                    margin -132px auto 0 auto
+                    width 304px
+                    height auto
+
+                .isDesktop
+                  @media(max-width 767px)
+                    display none
+
+                .isMobile
+                  @media(min-width 768px)
+                    display none
+
+                .content
+                  display flex
+                  flex-direction column
+                  justify-content center
+                  padding-left 40px
+
+                  @media(max-width 960px)
+                    text-align center
+                    padding 48px 0 0 0
+
+                  @media(max-width 767px)
+                    padding 0
+
+                  h3
+                    padding-bottom 14px
+
+                    @media(max-width 960px)
+                      text-align center
+
+                    @media(max-width 767px)
+                      order 2
+                      padding 34px 0 8px 0
+
+                  p
+                    @media(max-width 767px)
+                      order 3
+
+                  .appDownload
+                    @media(max-width 767px)
+                      order 1
+                      margin-top -18px
+
+                    a
+                      display inline-block
+
+                      &:last-child
+                        padding-left 26px
+
+                        @media(max-width 767px)
+                          padding-left 0
+                          margin-top 16px
+
+                      img
+                        margin 32px 0 0 0
+
+                        @media(max-width 767px)
+                          width 212px
+                          height 62px
+                          margin 0
+
+
+            .containerWrap
+              display flex
+              flex-direction column
+              height 100%
+
+            .button
+              margin 24px 0 0 0
+              padding 16px
+              color $clear-blue
+              border-color $clear-blue
+              min-width 240px
+              justify-content center
+
+              @media(max-width 767px)
+                width 100%
+                justify-content center
+
+              &:hover
+                background-color $clear-blue
+                color $gray-100
+
+              &:focus
+                border 1px solid $clear-blue
+
+              i
+                margin-right 16px
+
+            .image
+              padding 0 0 16px 0
+
+              img
+                max-height 100%
+                width 100%
+                margin-bottom 0
+
+                @media(max-width 767px)
+                  max-width 100%
+                  height 100%
+
+            .title
+              display flex
+              flex-direction column
+              align-items flex-start
+              color $gray-900
+              font-weight 500
+              padding 0 0 8px 0
+              font-size 24px
+              text-align left
+              line-height normal
+
+              @media (max-width 767px)
+                padding 0 0 8px 0
+
+
+              strong
+                font-weight bold
+                color $clear-blue
+                font-size 24px
+                line-height normal
+
+            .description
+              color $gray-900
+              font-size 16px
+              line-height 25px
+              margin-bottom 16px
+
+            .subDesc
+              color $gray-600
+              font-size 16px
+              line-height 25px
+              margin-top auto

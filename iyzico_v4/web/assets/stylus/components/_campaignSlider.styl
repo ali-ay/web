@@ -1,0 +1,126 @@
+.campaignSlider
+  max-width 1170px
+  margin 0px auto
+  width calc( 100% - 140px)
+
+  @media(max-width 1023px)
+    width calc(100% - 32px)
+
+  @media(max-width 767px)
+    width 100%
+
+  .sliderContainer
+    .slick-list
+      border-radius 36px
+      overflow hidden
+
+      @media(max-width 767px)
+        border-radius 16px
+
+    .slick-arrow
+      width 48px
+      height 48px
+      border-radius 25px
+
+    .slick-prev
+      left -60px
+      background-image url('../images/icons/left-arrow-passive.svg')
+
+      &:hover
+        background-image url('../images/icons/left-arrow-active.svg')
+
+
+    .slick-next
+      right -60px
+      background-image url('../images/icons/right-arrow-passive.svg')
+
+      &:hover
+        background-image url('../images/icons/right-arrow-active.svg')
+
+    .slick-dots
+      height 10px
+      margin 24px 0 0 0
+
+      @media(max-width 767px)
+        margin 17px 0 0 0
+
+    .campaignSliderBox
+      display flex
+      justify-content space-between
+      height 100%
+      min-height 376px
+      border-radius 36px
+      overflow hidden
+      background-position right
+      background-repeat no-repeat
+      background-size contain
+
+      @media(max-width 960px)
+        min-height 320px
+
+      @media(max-width 767px)
+        min-height 140px
+        border-radius 16px
+        margin 0 20px
+
+      .campaignSliderContent
+        display flex
+        flex-direction column
+        justify-content center
+        padding 48px 0 48px 64px
+
+        @media(max-width 960px)
+          padding 32px 0 32px 40px
+
+        @media(max-width 767px)
+          padding 20px 0 20px 20px
+
+        .title
+          font-size 34px
+          font-weight bold
+          padding-bottom 16px
+          line-height normal
+          color $gray-900
+
+          @media(max-width 960px)
+            font-size 24px
+
+          @media(max-width 767px)
+            font-size 14px
+            padding-bottom 16px
+
+        .desc
+          font-size 24px
+          padding-bottom 16px
+          line-height normal
+          max-width 504px
+          color $gray-900
+
+          @media(max-width 960px)
+            font-size 16px
+
+          @media(max-width 767px)
+            display none
+
+        .primary
+          min-width 240px
+          justify-content center
+          color $gray-100
+          background-color $gray-900
+
+          @media(max-width 767px)
+            font-size 12px !important
+            padding 9px
+            line-height 12px
+            min-width 120px
+
+      .campaignSliderImgBox
+        display flex
+        align-self center
+
+        img
+          max-height 350px
+          display flex
+
+          @media(max-width 767px)
+            max-height 106px

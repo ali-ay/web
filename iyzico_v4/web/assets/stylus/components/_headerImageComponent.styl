@@ -1,0 +1,175 @@
+.headerImageComponent
+  height 100%
+  min-height 766px
+  background-image: url('../images/content/bg-mask.svg?v=v4.0.28')
+  background-repeat no-repeat
+  background-size 50% 100%
+  background-position right
+
+  @media (max-width 960px)
+    min-height 100%
+
+  @media (max-width 640px)
+    display block
+
+  .container
+    height 100%
+    min-height 766px
+    display flex
+    width 100%
+    max-width 1270px
+    padding 0 50px
+
+    @media (max-width 960px)
+      min-height 100%
+
+    @media (max-width 640px)
+      flex-direction column
+      display block
+      padding 0 20px
+
+    .content
+      display flex
+      flex 1
+      justify-content center
+      flex-direction column
+      padding 50px 15px 50px 0
+      margin-top 132px
+
+      @media (max-width 960px)
+        margin-top 70px
+
+      @media (max-width 768px)
+        height 100%
+        display block
+
+      @media (max-width 640px)
+        margin-top 55px
+        padding 20px 0 15px 0
+
+      strong
+        display flex
+
+
+      p
+        padding 30px 0 60px 0
+
+        @media (max-width 768px)
+          padding 20px 0 60px 0
+
+        @media (max-width 640px)
+          padding 15px 0 30px 0
+          font-size 12px
+
+      ul
+        margin 0
+        padding 30px 0 60px 0
+
+        @media (max-width 768px)
+          padding 20px 0 60px 0
+
+        @media (max-width 640px)
+          padding 15px 0 30px 0
+
+        li
+          font-size 18px
+          line-height 30px
+          color #848484
+          font-weight 400
+          list-style none
+
+
+          &::before
+            display inline-block
+            content ''
+            -webkit-border-radius 0.375rem
+            border-radius 0.375rem
+            height 0.75rem
+            width 0.75rem
+            margin-right 0.5rem
+            background-color #202020
+
+      span
+        font-size 14px
+        display block
+        padding 5px 0
+
+    .image
+      display flex
+      flex 1
+      align-items flex-end
+      justify-content flex-start
+      padding 0 0 0 15px
+
+      @media (max-width 960px)
+        height 100%
+        padding 0
+        display flex
+        align-self flex-end
+
+      @media (max-width 768px)
+        justify-content center
+
+      img
+        width 100%
+        max-width 570px
+
+        @media (max-width 640px)
+          margin 0
+          max-width 285px
+
+    .form
+      display flex
+      align-items center
+      justify-content center
+      flex 1
+      padding 0 0 0 15px
+      margin-top 72px
+
+
+      @media (max-width 768px)
+        padding 0
+        margin 0 0 20px 0
+
+      #phone-error
+        display none!important
+
+      .offerForm
+        display flex
+        width 100%
+        background-color #fff
+        border-radius 10px
+        box-shadow 0 12px 29px 0 rgba(0, 0, 0, 0.1)
+
+        .signup-modal__form
+          padding 40px
+
+          @media (max-width 768px)
+            padding 30px 20px
+            width 100%
+
+          .inputWrap
+            margin-bottom 20px
+
+            span
+              font-size 18px
+              line-height 22px
+              font-weight 700
+              letter-spacing 2.6px
+              color #202020
+
+              @media (max-width 768px)
+                font-size 16px
+
+          .buttonGroup
+            flex-direction row-reverse
+
+            .button
+              @media (max-width 768px)
+                width 100%
+
+  .buttonGroup
+    margin 0px
+
+    @media (max-width 960px)
+      flex-direction column

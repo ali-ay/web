@@ -1,0 +1,150 @@
+.deercase
+  text-decoration none
+
+  .newHeaderComponent
+    background-color #e6503b
+    background-image none
+
+    @media(max-width 1023px)
+      background-color #ffffff
+
+    .iyzi-container
+      background-image url('../images/content/deercase-hero-img.png')
+      background-size cover
+      background-position right
+
+      @media(max-width 1023px)
+        background-image none
+
+      .content
+        max-width 630px
+
+        @media(max-width 1023px)
+          max-width 100%
+
+        h1
+          display flex
+          color #ffffff
+          font-size 48px
+          font-weight bold
+          line-height 1.4
+
+          @media(max-width 1023px)
+            color $gray-900
+
+          @media(max-width 767px)
+            font-size 34px
+            line-height normal
+
+        p
+          color #ffffff
+
+          @media(max-width 1023px)
+            color $gray-900
+
+        .deercaseLogo
+          max-width 270px
+          padding 16px 0 24px 0
+
+          @media(max-width 1023px)
+            max-width 100%
+            display flex
+            justify-content center
+
+          .mH
+            display block
+
+            @media(max-width 1023px)
+              display none
+
+          .dH
+            display none
+
+            @media(max-width 1023px)
+              display block
+
+        .basic
+          border-color #ffffff
+          color #ffffff
+
+          @media(max-width 1023px)
+            border-color $orange-pink
+            color $orange-pink
+
+          &:hover
+            background-color #ffffff
+            color $orange-pink
+
+            @media(max-width 1023px)
+              border-color $orange-pink
+              color $orange-pink
+
+      .imgResp
+        display none
+
+        @media(max-width 1023px)
+          display flex
+          background-color #e6503b
+
+  .iyziLife
+    ul
+      li
+        .itemContent
+          p
+            max-width 470px
+
+  .generalConditions
+    padding 80px 0 120px 0
+
+    @media(max-width 960px)
+      padding 80px 0
+
+    @media(max-width 767px)
+      padding 0 0 80px 0
+
+    .iyzi-container
+      .content
+        background-color $gray-200
+        padding 48px 70px
+        border-radius 16px
+        margin 0 15px
+
+        @media(max-width 960px)
+          padding 40px 32px
+
+        @media(max-width 767px)
+          padding 16px 8px
+
+        .title
+          font-size 34px
+          font-weight bold
+          line-height normal
+          padding-bottom 40px
+
+          @media(max-width 767px)
+            font-size 24px
+            padding-bottom 16px
+
+        ul
+          list-style none
+          padding 0 0 0 22px
+
+          li
+            font-size 24px
+            line-height normal
+            position relative
+            padding 0 0 32px 0
+
+            @media(max-width 767px)
+              font-size 14px
+              padding 0 0 16px 0
+
+            &::before
+              position absolute
+              content ""
+              height 6px
+              width 6px
+              border-radius 16px
+              background-color #000000
+              left -16px
+              top 17px

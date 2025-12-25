@@ -1,0 +1,47 @@
+.culture-photos
+  position relative
+  width 100%
+  overflow hidden
+
+  & img
+    width 100%
+    height auto
+
+  &__item
+    position relative
+    width 405px!important
+    height 405px!important
+    font-size 0
+    margin-right 5px
+
+    @media(max-width 480px)
+      width 245px!important
+      height 245px!important
+
+  &__small
+    width 400px
+    height auto
+    display inline-block
+
+    @media(max-width 480px) 
+      width 120px
+      height 120px
+
+    &:nth-child(1)
+      margin-bottom 5px
+
+    &:nth-child(2)
+      margin-left 5px
+      margin-bottom 5px
+
+    &:nth-child(4)
+      margin-left 5px
+
+  &__large
+    width 405px
+    height 405px
+    text-align center
+
+    @media(max-width 480px)
+      width 245px
+      height 245px

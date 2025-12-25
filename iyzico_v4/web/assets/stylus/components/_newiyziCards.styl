@@ -1,0 +1,182 @@
+.newiyziCards
+  display flex
+
+  .iyzi-container
+    padding 120px 0 0 0
+    flex-direction column
+
+    @media(max-width 1023px)
+      padding 80px 0 0 0
+      flex-direction column
+
+    @media(max-width 767px)
+      padding 72px 0 0 0
+
+    .title
+      font-size 40px
+      line-height normal
+      color $gray-900
+      text-align center
+      padding-bottom 48px
+      font-weight bold
+
+      @media (max-width 768px)
+        padding-bottom 43px
+
+    .cardWrap
+      display flex
+
+      .cardBox
+        display flex
+        flex-direction column
+        flex 1
+        padding 0 15px
+
+        @media(max-width 1023px)
+          padding 0 48px
+
+        @media(max-width 767px)
+          padding 0 8px
+
+        img
+          display flex
+          align-self flex-start
+
+        h3
+          font-size 40px
+          font-weight bold
+          line-height normal
+          color $gray-900
+          display flex
+          flex-direction column
+
+          @media(max-width 1023px)
+            font-size 34px
+            padding 48px 0 24px 0
+            display inline-block
+
+          @media(max-width 767px)
+            font-size 24px
+            padding 24px 0 8px 0
+
+        p
+          font-size 24px
+          color $gray-900
+          line-height normal
+          padding-top 24px
+
+          @media(max-width 1023px)
+            padding-bottom 64px
+
+          @media(max-width 767px)
+            font-size 16px
+            padding-bottom 40px
+
+        i
+          display inline-table
+          margin-bottom 56px
+
+          @media(max-width 767px)
+            zoom 0.8
+            transform scale(0.8)
+            -webkit-transform scale(0.8)
+
+        &:last-child
+          p
+            padding-bottom 0
+
+.multipleCards
+  display flex
+
+  .header
+    display flex
+
+    @media (max-width 768px)
+      padding 0 48px
+
+    @media (max-width 767px)
+      padding 0 16px
+      flex-wrap wrap
+
+    .arrowIcon
+      margin 10px 30px 0 0
+
+      img
+        @media (max-width 767px)
+          height 32px
+
+    .title
+      max-width 970px
+
+      @media (max-width 768px)
+        padding-bottom 32px
+
+      h2
+        font-size 48px
+        font-weight bold
+        line-height 1.4
+        color $gray-900
+        text-align left
+        padding-bottom 20px
+
+        @media (max-width 767px)
+          font-size 28px
+          line-height normal
+          padding 15px 0 8px 0
+
+      p
+        font-size 24px
+        line-height normal
+        color $gray-900
+        font-weight normal
+        text-align left
+        padding-bottom 32px
+
+        @media (max-width 767px)
+          font-size 16px
+          line-height 25px
+
+  .cardWrap
+    padding-bottom 80px
+
+    &:last-of-type
+      padding-bottom 48px
+
+    .cardBox
+      img
+        @media (max-width 767px)
+          width 72px !important
+
+      h3
+        font-size 34px !important
+        font-weight bold !important
+        line-height normal !important
+        padding-top 24px
+
+        @media (max-width 767px)
+          font-size 24px !important
+
+        span
+          font-style normal
+          font-size 34px !important
+          padding 0px !important
+
+          @media (max-width 767px)
+            font-size 24px !important
+            padding 0px !important
+
+      p
+        @media (max-width 767px)
+          padding-top 8px
+
+  span
+    font-size 16px
+    font-style italic
+    padding 0 15px
+
+    @media(max-width 1023px)
+      padding 0 48px
+
+    @media(max-width 767px)
+      padding 16px 8px 14px 8px
+      font-size 14px

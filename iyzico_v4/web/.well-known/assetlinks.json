@@ -1,0 +1,38 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "iyzico.merchant.payment.alpha",
+      "sha256_cert_fingerprints": [
+    "A0:BE:31:D5:D3:BB:FC:BB:CA:3E:EF:19:41:7E:0A:44:5B:4A:08:16:1E:7F:97:59:0A:DA:3F:D5:18:81:08:A0"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "iyzico.merchant.payment",
+      "sha256_cert_fingerprints": [
+    "73:82:41:57:67:8F:12:E5:B3:D0:04:80:DC:EF:58:12:2F:11:6D:1F:35:6C:32:D5:A1:6C:2F:42:B4:6E:D5:9B"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.provisionpay.softpos.iyzico",
+      "sha256_cert_fingerprints": [
+    "7B:E2:24:73:A0:79:E9:89:A9:A5:A5:11:B7:33:ED:92:C8:2D:C6:C4:FA:79:4B:79:67:1C:26:49:37:EA:07:67"
+      ]
+    }
+  }
+]

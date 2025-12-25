@@ -1,0 +1,319 @@
+.mainLandingPage
+  .navigationHeaderMenu
+    border none
+    background-color #ffffff
+
+    @media (max-width 768px)
+      border-bottom 1px solid #f1f3f5
+
+  .container
+    display flex
+
+.mainHeaderBanner
+  display flex
+  flex-direction column
+
+  @media (max-width 640px)
+    flex-direction column
+
+  ul
+    list-style none
+    margin 0
+    padding 26px 0 40px 0
+
+    @media (max-width 767px)
+      padding 8px 0 32px 0
+
+    li
+      list-style none
+      font-size 24px
+      line-height 1.84
+      color #343a40
+      font-weight 500
+      margin-left -18px
+
+      @media (max-width 767px)
+        font-size 16px
+        margin-left 0
+        line-height 32.2px
+        padding-left 16px
+
+    li:before
+      content ""
+      width 7px
+      background-color #202020
+      height 7px
+      justify-content center
+      align-items center
+      display inline-flex
+      border-radius 5px
+      position relative
+      top -5px
+      left -7px
+      color #343a40
+      margin 0
+      margin-right 10px !important
+
+      @media (max-width 767px)
+        width 5px
+        height 5px
+        left 0
+        margin-left -16px
+
+  .container-hero
+    display flex
+    flex-direction row
+
+    @media (max-width 960px)
+      flex-direction column
+
+  .headerL
+    display flex
+    flex 1
+    background-size cover
+    flex-direction column
+    justify-content flex-end
+    align-items flex-end
+    background-position right
+
+    img
+      max-width 100%
+
+    .headerBox
+      text-align left
+      width 100%
+      max-width 548px
+      padding 48px 0 120px 0
+      flex 1
+
+      @media (max-width 960px)
+        padding 32px 0 56px 86px
+        max-width 100%
+
+      @media (max-width 767px)
+        max-width 100%
+        padding 16px 16px 40px 16px
+
+      h1
+        font-size 58px
+        line-height 80px
+
+        @media (max-width 767px)
+          font-size 34px
+          line-height normal
+
+        strong
+          line-height 80px
+
+          @media (max-width 767px)
+            line-height normal
+
+      .button
+        min-width 230px
+        display flex
+        justify-content center
+
+        @media (max-width 767px)
+          width 100%
+          margin 0px auto
+
+    .buttonGroup
+      margin 0
+      flex-wrap wrap
+
+      @media (max-width 767px)
+        display flex
+        flex-direction column
+        padding 0 16px
+
+      .basic
+        padding 16px
+        min-width 204px
+        max-width 206px !important
+        display flex
+        justify-content center
+
+        @media (max-width 767px)
+          min-width 288px
+          max-width 100% !important
+          padding 14px
+
+        i
+          margin-right 16px
+
+          @media (max-width 767px)
+            zoom 0.7
+
+      .primary
+        margin-right 24px
+
+        @media (max-width 767px)
+          margin-right 0
+
+      .button
+        width 100%
+        max-width 230px
+        min-width 215px
+        max-height 56px
+        margin-bottom 16px
+
+        @media (max-width 767px)
+          max-width 100%
+
+
+
+      span
+        color $clear-blue
+
+  .headerR
+    display flex
+    flex 1
+    background-size cover
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    max-width 50%
+
+    @media (max-width 960px)
+      max-width 100%
+
+    img
+      max-width 100%
+
+    .headerBox
+      text-align left
+      align-self right
+      width 100%
+      padding 48px 0 120px 53px
+      flex 1
+
+      @media (max-width 960px)
+        padding 32px 0 64px 86px
+        max-width 100%
+
+      @media (max-width 767px)
+        max-width 100%
+        padding 16px 16px 40px 16px
+
+      h2
+        font-size 58px
+        line-height 80px
+
+        @media (max-width 767px)
+          font-size 34px
+          line-height normal
+
+        strong
+          line-height 80px
+
+          @media (max-width 767px)
+            line-height normal
+
+      .button
+        min-width 230px
+        display flex
+        justify-content center
+
+      span
+        color $orange-pink
+
+    .buttonGroup
+      margin 0
+      flex-wrap wrap
+
+      @media (max-width 767px)
+        display flex
+        flex-direction column
+        padding 0 16px
+
+      .basic
+        padding 16px
+        min-width 204px
+        max-width 206px !important
+        display flex
+        justify-content center
+
+        @media (max-width 767px)
+          min-width 288px
+          max-width 100% !important
+          padding 14px
+
+        i
+          margin-right 16px
+
+          @media (max-width 767px)
+            zoom 0.7
+
+      .default
+        margin-right 24px
+
+        @media (max-width 767px)
+          margin-right 0
+
+
+      .button
+        width 100%
+        max-width 230px
+        min-width 215px
+        max-height 56px
+        margin-bottom 16px
+
+        @media (max-width 767px)
+          max-width 100%
+
+    .title
+      font-size 48px
+      line-height normal
+      font-weight 300
+      letters-pacing normal
+      color #202020
+
+      @media (max-width 768px)
+        font-size 38px
+
+      @media (max-width 640px)
+        font-size 24px
+
+      strong
+        font-weight bold
+
+  .icon--left-arrow
+    margin 10px
+
+.personalNavMenu
+  @media (max-width 960px)
+    display none !important
+
+  .iyzi-container
+    .mainHeaderLeftMenu
+      ul
+        li
+          &:first-child
+            padding-left 0
+
+          &:last-child
+            font-weight normal
+
+
+.personal
+  .base-main
+    padding-top 203px
+
+    @media (max-width 960px)
+      padding-top 146px
+
+    @media (max-width 767px)
+      padding-top 114px
+
+
+
+
+.pPwiBrands
+  .base-main
+    padding-top 139px !important
+
+    @media (max-width 960px)
+      padding-top 82px !important
+
+    @media (max-width 767px)
+      padding-top 98px !important

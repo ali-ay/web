@@ -1,0 +1,555 @@
+{% if app.request.attributes.get('_locale') == "en" %}
+    {% set notFound = "Page Not Found" %}
+    {% set return = "Return To Homepage" %}
+    {% set forBusiness = "Business" %}
+    {% set forBusinessReceviePyment = "Payment Methods" %}
+    {% set virtualPos = "Receive Payment From Your Website" %}
+    {% set marketPlace = "Marketplace Payment Solution" %}
+    {% set getPaidLink = "Get Paid by Link" %}
+    {% set massPayOut = "Global Mass Payout" %}
+    {% set stantSales = "Stall Sales" %}
+    {% set socialMediaSales = "Sell on Social Platforms" %}
+    {% set onlinePayment = "The Easiest Way to Collect Payment" %}
+    {% set forPersonal = "Personal" %}
+    {% set pwi = "Pay with iyzico" %}
+    {% set personalBP = "Buyer Protection" %}
+    {% set campaigns = "Campaigns" %}
+    {% set aboutUs = "About Us" %}
+    {% set whyiyzico = "Why iyzico" %}
+    {% set career = "Career" %}
+    {% set culture = "Culture" %}
+    {% set press = "Press" %}
+    {% set support = "Support" %}
+    {% set helpCenter = "Help Center" %}
+    {% set contact = "Contact" %}
+    {% set developer = "Developers" %}
+    {% set engBlog = "Engineering Blog" %}
+    {% set gitHub = "GitHub" %}
+    {% set sandBox = "Sandbox" %}
+    {% set developersPage = "Developer Documentation" %}
+    {% set solutionPartners = "Solution Partners" %}
+    {% set blog = "Blog" %}
+    {% set iyziStart = "iyzico Start" %}
+    {% set generalConditions = "General Conditions" %}
+    {% set privacyPolicy = "Privacy Policy" %}
+    {% set userAgreement = "User Agreement" %}
+    {% set businessBuyerProtectedMoneyTransfer = "Protected Bank Transfer Method" %}
+    {% set subscription = "Subscription Payment Method" %}
+    {% set phoneNumber = "+90 216 599 01 00" %}
+    {% set socialResponsibility = "Social Responsibility" %}
+    {% set languageTurkish = "TR" %}
+    {% set languageEnglish = "ENG" %}
+    {% set newBadge = "NEW" %}
+    {% set businessBp = "Buyer Protection for Sellers" %}
+    {% set privileges = "Features" %}
+    {% set fraud = "Fraud Protection System" %}
+    {% set dynamic3DS = "Dynamic 3DS" %}
+    {% set smartPayment = "Smart Payment Routing Service" %}
+    {% set signUp = "Register Now" %}
+    {% set login = "Log In" %}
+    {% set finishTitle = "Finish alışverişlerinizde iyzico ile Öde’yi tercih edin, bakiyeniz hediye TL dolsun." %}
+    {% set finishDesc = "Finish.com.tr’den yapacağınız 175 TL ve üzeri alışverişlerinizde <strong>iyzico ile Öde'yi tercih edin, hediye 25 TL kazanın.</strong> Hediye TL’nizi binlerce mağazada iyzico ile Öde güvencesiyle dilediğiniz gibi harcayın." %}
+    {% set finishButton = "Kampanya Detayları" %}
+    {% set personalHeaderNavTitle = "iyzico Hesabını Kolayca Yönet" %}
+    {% set iyzicoCard = "iyzico Kart" %}
+
+{% else %}
+    {% set notFound = "Aradığınız sayfa bulunamadı." %}
+    {% set return = "Anasayfaya Dön" %}
+    {% set forBusiness = "İşim İçin" %}
+    {% set forBusinessReceviePyment = "Web Sitesinden Ödeme Al" %}
+    {% set virtualPos = "Sanal POS" %}
+    {% set marketPlace = "Pazaryeri Ödeme Çözümü" %}
+    {% set getPaidLink = "Link İle Ödeme Al" %}
+    {% set massPayOut = "Çoklu Para Gönderimi" %}
+    {% set stantSales = "Stant Satışları" %}
+    {% set socialMediaSales = "Sosyal Medya Satışları" %}
+    {% set onlinePayment = "E-Tahsilat" %}
+    {% set forPersonal = "Kendim İçin" %}
+    {% set pwiBrands = "Mağazalar" %}
+    {% set pwi = "iyzico ile Öde" %}
+    {% set personalBP = "Korumalı Alışveriş" %}
+    {% set campaigns = "Kampanyalar" %}
+    {% set aboutUs = "Hakkımızda" %}
+    {% set whyiyzico = "Neden iyzico" %}
+    {% set career = "Kariyer" %}
+    {% set culture = "Kültür" %}
+    {% set press = "Basın" %}
+    {% set support = "Destek" %}
+    {% set helpCenter = "Yardım Merkezi" %}
+    {% set contact = "İletişim" %}
+    {% set developer = "Geliştirici" %}
+    {% set engBlog = "Engineering Blog" %}
+    {% set gitHub = "GitHub" %}
+    {% set sandBox = "Sandbox" %}
+    {% set developersPage = "Geliştirici Sayfası" %}
+    {% set solutionPartners = "Çözüm Ortaklarımız" %}
+    {% set blog = "Blog" %}
+    {% set iyziStart = "iyzico Start" %}
+    {% set generalConditions = "Genel Şartlar" %}
+    {% set privacyPolicy = "Gizlilik Politikası" %}
+    {% set userAgreement = "Kullanıcı Sözleşmesi" %}
+    {% set businessBuyerProtectedMoneyTransfer = "Korumalı Havale/EFT Yöntemi" %}
+    {% set subscription = "Abonelik Yöntemi" %}
+    {% set phoneNumber = "+90 216 599 01 00" %}
+    {% set socialResponsibility = "Sosyal Sorumluluk" %}
+    {% set brandGuide = "Kurumsal Kimlik" %}
+    {% set languageTurkish = "TR" %}
+    {% set languageEnglish = "ENG" %}
+    {% set newBadge = "YENİ" %}
+    {% set businessBp = "İşim İçin Korumalı Alışveriş" %}
+    {% set privileges = "Ayrıcalıklar" %}
+    {% set fraud = "Sahtecilik Önleme Sistemi" %}
+    {% set dynamic3DS = "Dynamic 3DS Sistemi" %}
+    {% set smartPayment = "Akıllı Ödeme Yönlendirme Servisi" %}
+    {% set signUp = "Üye Ol" %}
+    {% set login = "Panele Giriş Yap" %}
+    {% set finishTitle = "Finish alışverişlerinizde iyzico ile Öde’yi tercih edin, bakiyeniz hediye TL dolsun." %}
+    {% set finishDesc = "Finish.com.tr’den yapacağınız 175 TL ve üzeri alışverişlerinizde <strong>iyzico ile Öde'yi tercih edin, hediye 25 TL kazanın.</strong> Hediye TL’nizi binlerce mağazada iyzico ile Öde güvencesiyle dilediğiniz gibi harcayın." %}
+    {% set finishButton = "Kampanya Detayları" %}
+    {% set personalHeaderNavTitle = "iyzico Hesabını Kolayca Yönet" %}
+    {% set iyzicoCard = "iyzico Kart" %}
+
+
+{% endif %}
+
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block pageTitle %}{% endblock %}</title>
+
+    <link rel="canonical" href="{{ app.request.uri|getCanonical }}" />
+
+    <link rel="icon" href="{{ asset('assets/images/content/favicon.png') }}">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <!-- OpenGraph Information -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ app.request.uri|getCanonical }}" />
+    {% block openGraph %}{% endblock %}
+    <meta property="og:locale" content="{{ app.session.get('_locale') }}" />
+    <meta property="og:site_name" content="iyzico.com" />
+    <!-- Header Style Includes  -->
+    <link rel="stylesheet" href="{{ asset('assets/styles/main.min.css') }}" media="screen">
+    {% block headerStyleIncludes %}{% endblock %}
+    <!-- Header Javascript Includes -->
+    {% block headerJavascriptIncludes %}{% endblock %}
+    <!-- Styles -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5RVPKJN');</script>
+</head>
+
+<body class="{% block bodyClass %}MainMenu{% endblock %}">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RVPKJN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="iyzi-site heightFix failLandingPage">
+        <header class="base-header {% block headerClasses %}{% endblock %}">
+
+
+<div class="navigationHeaderMenu">
+	<div class="iyzi-container">
+		<div class="iyzicoLogo">
+			<a href="{{ path('homepage') }}"><img src="{{ asset('assets/images/content/logo.svg')}}" alt="iyzico Logo"/></a>
+			<ul class="desktop-navigation-components">
+				<li class="mHide"><a href="#" class="dropdown custom-submenu-toggle {{ activeMenu(['business_virtual_pos', 'business_marketplace','business_receive_payment','business_online_proceeds_payment','business_etsy','business_social_media','business_stand_sales']) }}" data-target="for-personal-submenu">{{ forPersonal }}</a></li>
+				<li class="mHide"><a href="#" class="dropdown custom-submenu-toggle" data-target="for-business-submenu">{{ forBusiness }}</a></li>
+			</ul>
+		</div>
+		<div class="d-flex desktop-navigation-components mainHeaderLeftMenu">
+			<ul>
+				<li class="mHide"><a href="{{ path('help_center') }}">{{ support }}</a></li>
+				<li><a href="{{ path('help_center') }}"><i class="icon icon--contact-phone"></i></a><a href="tel:+90-216-599-0100"><span>{{ phoneNumber }}</span></a></li>
+				<li class="mHide"><i class="dividers"></i></li>
+
+				{% if app.request.attributes.get('_locale') == "tr" %}
+					<li class="mHide"><a href="#" id="other-language" class="lang-switcher user-action__languages--item">{{ languageEnglish }}</a></li>
+				{% else %}
+					<li class="mHide"><a href="#" id="other-language" class="lang-switcher user-action__languages--item">{{ languageTurkish }}</a></li>
+				{% endif %}
+
+			</ul>
+		</div>
+		<div class="hamburgerMenu mobile-navigation-components">
+			<i class="icon icon--variable-hamburger"></i>
+		</div>
+	</div>
+</div>
+<nav class="mainNavigation">
+		<div class="iyzi-container for-personal-submenu custom-submenu desktop-navigation-components" style="display:none;">
+			<div class="navMenuContent">
+				<div class="col1">
+					<div class="iyzi-row">
+						<div class="buttonGroup">
+							<a href="{{ path('personal') }}" class="clear-blue">{{ forPersonal }}</a>
+							<a href="{{ path('business') }}">{{ forBusiness }}</a>
+						</div>
+						<ul>
+							<li>
+								<div class="title"><a href="{{ path('iyzicoCardLP') }}">{{ iyzicoCard }}</a><span class="newBadge">{{ newBadge }}</span></div>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('personal') }}">{{ pwi }}</a></div>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('pwi_brands') }}">{{ pwiBrands }}</a></div>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('personal_buyer_protection') }}">{{ personalBP }}</a></div>
+							</li>
+						</ul>
+						<ul>
+							<li class="alignRight">
+								<div class="appDownload">
+									<p>{{ personalHeaderNavTitle }}</p>
+									<div class="downloadBtn">
+										<a href="https://itunes.apple.com/us/app/iyzico/id1436467445?ls=1&mt=8" target="_blank"><img src="{{ asset('assets/images/content/app-store-en.png')}}" srcset="{{ asset('assets/images/content/app-store-en@2x.png')}} 2x" alt="iyzico"/></a>
+										<a href="https://play.google.com/store/apps/details?id=com.iyzico.assistant" target="_blank"><img src="{{ asset('assets/images/content/google-play-en.png')}}" srcset="{{ asset('assets/images/content/google-play-en@2x.png')}} 2x" alt="iyzico"/></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="iyzi-container for-business-submenu custom-submenu desktop-navigation-components" style="display: none;">
+			<div class="navMenuContent navMenuFlex">
+				<div class="col2">
+					<div class="iyzi-row">
+						<ul>
+							<li>
+								<div class="title"><a href="{{ path('business') }}">{{ forBusinessReceviePyment }}</a></div>
+								<p>
+									<a href="{{ path('business_virtual_pos') }}">{{ virtualPos }}</a>
+								</p>
+								<p>
+									<a href="{{ path('business_marketplace') }}">{{ marketPlace }}</a>
+								</p>
+								<p>
+									<a href="{{ path('subscription_landing_page') }}">{{ subscription }}</a>
+								</p>
+								<p>
+									<a href="{{ path('business_bank_transfer') }}">{{ businessBuyerProtectedMoneyTransfer }}</a>
+								</p>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('pay_with_iyzico_landingpage') }}">{{ pwi }}</a><span class="newBadge">{{ newBadge }}</span></div>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('mass_pay_out_landingpage') }}">{{ massPayOut }}</a><span class="newBadge">{{ newBadge }}</span></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<div class="title"><a href="{{ path('business_receive_payment') }}">{{ getPaidLink }}</a></div>
+								<p>
+									<a href="{{ path('business_stand_sales') }}">{{ stantSales }}</a>
+								</p>
+								<p>
+									<a href="{{ path('business_social_media') }}">{{ socialMediaSales }}</a>
+								</p>
+								<p>
+									<a href="{{ path('business_online_proceeds_payment') }}">{{ onlinePayment }}</a>
+								</p>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('campaign_landing_page') }}">{{ campaigns }}</a></div>
+							</li>
+							<li>
+								<div class="title"><a href="{{ path('business_buyer_protection') }}">{{ businessBp }}</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col1">
+					<div class="iyzi-row">
+						<ul class="navRightMenu">
+							<li>
+								<div class="buttonGroup">
+									<a href="{{ path('hesap_olustur_landing_page') }}" class="button primary">{{ signUp }}</a>
+									<a href="https://merchant.iyzipay.com/login?lang=tr" class="button basic"><i class="icon icon--icn-shop"></i>{{ login }}</a>
+								</div>
+								<div class="navGrayBox">
+									<ul>
+										<li>
+											<div class="title">{{ privileges }}</div>
+											<p>
+												<a href="{{ path('business_fraud') }}">{{ fraud }}</a>
+											</p>
+											<p>
+												<a href="{{ path('dynamic3ds_landing_page') }}">{{ dynamic3DS }}</a>
+											</p>
+											<p>
+												<a href="{{ path('smart_payment_landing_page') }}">{{ smartPayment }}</a>
+											</p>
+										</li>
+										<li>
+											<div class="title">{{ developer }}</div>
+											<p>
+												<a href="https://dev.iyzipay.com/tr">{{ developersPage }}</a>
+											</p>
+											<p>
+												<a href="{{ path('ready_integration_landing_page') }}">{{ solutionPartners }}</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobileNavigationMenu mobile-navigation-components">
+			<ul>
+				<li class="businessMM">
+					<div class="mobileMenuWrap">
+						<div class="buttonGroup">
+							<a href="{{ path('personal') }}">{{ forPersonal }}</a>
+							<a href="{{ path('business') }}" class="clear-blue">{{ forBusiness }}</a>
+						</div>
+						<div class="mobileMenuSubMenu hasSub menuOpen">
+							<a href="#" class="menuToggler">{{ forBusinessReceviePyment }} <i class="icon icon--variable"></i></a>
+							<div class="mobileMenuBox">
+								<ul>
+									<li><a href="{{ path('business_virtual_pos') }}">{{ virtualPos }}</a></li>
+									<li><a href="{{ path('business_marketplace') }}">{{ marketPlace }}</a></li>
+									<li><a href="{{ path('subscription_landing_page') }}">{{ subscription }}</a></li>
+									<li><a href="{{ path('business_bank_transfer') }}">{{ businessBuyerProtectedMoneyTransfer }}</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('pay_with_iyzico_landingpage') }}">{{ pwi }} <span class="newBadge">{{ newBadge }}</span></a>
+						</div>
+
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('mass_pay_out_landingpage') }}">{{ massPayoutSubTitle }}</a>
+						</div>
+
+						<div class="mobileMenuSubMenu hasSub">
+							<a href="#" class="menuToggler">{{ getPaidLink }}<i class="icon icon--variable"></i></a>
+							<div class="mobileMenuBox mobileBoxClose">
+								<ul>
+									<li><a href="{{ path('business_stand_sales') }}">{{ stantSales }}</a></li>
+									<li><a href="{{ path('business_social_media') }}">{{ socialMediaSales }}</a></li>
+									<li><a href="{{ path('business_online_proceeds_payment') }}">{{ onlinePayment }}</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('campaign_landing_page') }}">{{ campaigns }}</a>
+						</div>
+
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('business_buyer_protection') }}">{{ businessBp }}</a>
+						</div>
+
+						<div class="mobileMenuButtonGroup">
+							<a href="https://merchant.iyzipay.com/auth/login" class="button basic"><i class="icon icon--icn-shop"></i>{{ login }}</a>
+							<a href="{{ path('hesap_olustur_landing_page') }}" class="button primary mR-15">{{ signUp }}</a>
+						</div>
+						<div class="mobileNavigationMenuContact mobile-navigation-components">
+							<ul>
+								<li class="subTitle">{{ privileges }}</li>
+								<li class="description"><a href="{{ path('business_fraud') }}">{{ fraud }}</a></li>
+								<li class="description"><a href="{{ path('dynamic3ds_landing_page') }}">{{ dynamic3DS }}</a></li>
+								<li class="description bBottom"><a href="{{ path('smart_payment_landing_page') }}">{{ smartPayment }}</a></li>
+								<li class="subTitle pT24">{{ developer }}</li>
+								<li class="description"><a href="https://dev.iyzipay.com/tr">{{ developersPage }}</a></li>
+								<li class="description"><a href="{{ path('ready_integration_landing_page') }}">{{ solutionPartners }}</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="mainMM">
+					<div class="mobileMenuWrap">
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('personal') }}">{{ forPersonal }}</a>
+						</div>
+						<div class="mobileMenuSubMenu">
+							<a href="{{ path('business') }}">{{ forBusiness }}</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+</nav>
+
+
+
+
+        </header>
+
+        <main class="base-main {% block mainClass %}{% endblock %}">
+
+        <section class="contactHero">
+          <div class="iyzi-container">
+            <div class="newHeaderComponent">
+                <div class="content">
+                  <h1>{{ notFound }}</h1>
+                  <div class="buttonGroup">
+                    <a href="{{ path('homepage') }}" class="button primary" title="Kurumsal">{{ return }}</a>
+                  </div>
+                </div>
+                <div class="imgResp">
+                  <img src="/assets/images/content/newArrow.svg">
+                </div>
+            </div>
+          </div>
+        </section>
+
+        </main>
+        {% block rateSmileys %}{% endblock %}
+        <footer class="base-footer {% block footerClass %}{% endblock %}">
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="footerTop">
+        <ul>
+          <li class="footerLogo">
+            <img src="{{ asset('assets/images/content/logo-white.svg')}}" alt="iyzico Logo" height="65" class="mB-32"/>
+            <div class="footerLocation">
+              <div class="toolTip">
+                <ul class="accordion hasSub menuOpen">
+                  <li class="footerMenuTitle">
+                    <a href="{{ path('career') }}">iyzico</a>
+                    <i class="icon icon--icn-uparrow"></i>
+                    <i class="icon icon--icn-downarrow"></i>
+                  </li>
+                  <li><a href="{{ path('who_we_are') }}">{{ aboutUs }}</a></li>
+                  {% if app.request.attributes.get('_locale') == "tr" %}
+                          <li><a href="{{ path('whyiyzico') }}">{{ whyiyzico }}</a></li>
+                  {% endif %}
+                  <li><a href="{{ path('career') }}">{{ career }}</a></li>
+                  <li><a href="{{ path('culture') }}">{{ culture }}</a></li>
+                  <li><a href="{{ path('press') }}">{{ press }}</a></li>
+                  <li><a href="{{ path('goodToGood_landing_page') }}">{{ socialResponsibility }}</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="footerMenuTitle p16">
+            <a href="{{ path('campaign_landing_page') }}">{{ campaigns }}</a>
+            <i class="icon icon--icn-rightarrow"></i>
+          </li>
+          <li class="footerMenuTitle p16">
+            <a href="/blog/" target="_blank">{{ blog }}</a>
+            <i class="icon icon--icn-rightarrow"></i>
+          </li>
+          <li class="footerMenuTitle p16">
+            <a href="https://www.iyzico.com/iyzistart/">{{ iyziStart }}</a>
+            <i class="icon icon--icn-rightarrow"></i>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <ul class="accordion hasSub">
+              <li class="footerMenuTitle">
+                <a href="{{ path('business') }}">{{ forBusiness }}</a>
+                <i class="icon icon--footer-plus"></i>
+                <i class="icon icon--footer-minus"></i>
+              </li>
+              <li class="footerMenuSubTitle">
+                <a href="{{ path('pay_with_iyzico_landingpage') }}">{{ pwi }}</a>
+              </li>
+              <li class="footerMenuSubTitle"><a href="{{ path('mass_pay_out_landingpage') }}">{{ massPayOut }}</a></li>
+              <li class="footerMenuSubTitle"><a href="{{ path('business') }}">{{ forBusinessReceviePyment }}</a></li>
+              <li><a href="{{ path('business_virtual_pos') }}">{{ virtualPos }}</a></li>
+              <li><a href="{{ path('business_marketplace') }}">{{ marketPlace }}</a></li>
+              <li><a href="{{ path('subscription_landing_page') }}">{{ subscription }}</a></li>
+              <li class="pB-16"><a href="{{ path('business_bank_transfer') }}">{{ businessBuyerProtectedMoneyTransfer }}</a></li>
+              <li class="footerMenuSubTitle"><a href="{{ path('business_receive_payment') }}">{{ getPaidLink }}</a></li>
+              <li><a href="{{ path('business_stand_sales') }}">{{ stantSales }}</a></li>
+              <li><a href="{{ path('business_social_media') }}">{{ socialMediaSales }}</a></li>
+              <li class="pB-16"><a href="{{ path('business_online_proceeds_payment') }}">{{ onlinePayment }}</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <ul class="accordion hasSub">
+              <li class="footerMenuTitle"><a href="{{ path('personal') }}">{{ forPersonal }}</a> <i class="icon icon--footer-plus"></i><i class="icon icon--footer-minus"></i></li>
+              <li><a href="{{ path('personal') }}">{{ pwi }}</a></li>
+              <li><a href="{{ path('personal_buyer_protection') }}">{{ personalBP }}</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <ul class="accordion hasSub fbBottom">
+              <li class="footerMenuTitle">{{ support }} <i class="icon icon--footer-plus"></i><i class="icon icon--footer-minus"></i></li>
+              <li><a href="{{ path('help_center') }}">{{ helpCenter }}</a></li>
+              <li class="pB-16"><a href="{{ path('contact_us') }}">{{ contact }}</a></li>
+            </ul>
+            <ul class="accordion hasSub">
+              <li class="footerMenuTitle">{{ developer }} <i class="icon icon--footer-plus"></i><i class="icon icon--footer-minus"></i></li>
+              <li><a href="https://dev.iyzipay.com/tr" target="_blank">{{ developersPage }}</a></li>
+              <li><a href="http://sandbox-merchant.iyzipay.com/" target="_blank">{{ sandbox }}</a></li>
+              <li><a href="https://github.com/iyzico" target="_blank">{{ gitHub }}</a></li>
+              <li><a href="{{ path('ready_integration_landing_page') }}">{{ solutionPartners }}</a></li>
+              <li class="pB-16"><a href="https://iyzico.engineering/" target="_blank">{{ engBlog }}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/iyzico" rel="nofollow">
+            <svg class="icon">
+              <use xlink:href="/assets/images/sprite/icons.svg#socialmedia-facebook"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/iyzico/" rel="nofollow">
+            <svg class="icon">
+              <use xlink:href="/assets/images/sprite/icons.svg#socialmedia-instagram"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/iyzi-payments" rel="nofollow">
+            <svg class="icon">
+              <use xlink:href="/assets/images/sprite/icons.svg#socialmedia-linkedin"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/iyzico" rel="nofollow">
+            <svg class="icon">
+              <use xlink:href="/assets/images/sprite/icons.svg#socialmedia-twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCk4iPbGOno3mTSWEvQ1Rk5Q" rel="nofollow">
+            <svg class="icon">
+              <use xlink:href="/assets/images/sprite/icons.svg#socialmedia-youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="contracts">
+          <a href="{{ path('general_conditions') }}">{{ generalConditions }}</a>
+          <a href="{{ path('privacy_policy') }}">{{ privacyPolicy }}</a>
+          <a href="{{ path('user_agreement') }}">{{ userAgreement }}</a>
+        </div>
+        <ul class="footerLogo footerMenuMobile fQr">
+          <li>
+            <div id="ETBIS"><div id="A795DB84D56D49E9A26D932119451198"><a href="https://etbis.eticaret.gov.tr/sitedogrulama/A795DB84D56D49E9A26D932119451198" target="_blank"><img style='width:48px; height:52px' src="data:image/jpeg;base64, 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
+          </li>
+          <li>
+            <img src="{{ asset('assets/images/footer/MerkezBankasi_Logo.svg')}}" alt="tcmb" width="140" height="56">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+        </footer>
+        <script src="{{ asset('assets/scripts/vendors.min.js')}}"></script>
+        <script src="{{ asset('assets/scripts/main.min.js')}}" defer></script>
+          {% block bodyBottomScripts %}{% endblock %}
+    </div>
+    {% include '@root/Partials/_successFailPopup.html.twig' %}
+</body>
+</html>

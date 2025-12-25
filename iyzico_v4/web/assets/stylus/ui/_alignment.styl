@@ -1,0 +1,98 @@
+sizes = 0 5 10 20 15 30 40 30 50 60 86 90 100 120 150 200
+for num in sizes
+  .m-{num}
+    margin unit(num, px)
+  .m-b-{num}
+    margin-bottom unit(num, px)
+  .m-t-{num}
+    margin-top unit(num, px)
+  .m-l-{num}
+    margin-left unit(num, px)
+  .m-r-{num}
+    margin-right unit(num, px)
+  .m-h-{num}
+    margin-right unit(num, px)
+    margin-left unit(num, px)
+  .m-v-{num}
+    margin-top unit(num, px)
+    margin-bottom unit(num, px)
+
+  .p-{num}
+    padding unit(num, px)
+  .p-b-{num}
+    padding-bottom unit(num, px)
+  .p-t-{num}
+    padding-top unit(num, px)
+  .p-l-{num}
+    padding-left unit(num, px)
+  .p-r-{num}
+    padding-right unit(num, px)
+  .p-h-{num}
+    padding-right unit(num, px)
+    padding-left unit(num, px)
+  .p-v-{num}
+    padding-top unit(num, px)
+    padding-bottom unit(num, px)
+
+
+@media (min-width 768px)
+  for num in sizes
+    .m-sm-{num}
+      margin unit(num, px)
+    .m-b-sm-{num}
+      margin-bottom unit(num, px)
+    .m-t-sm-{num}
+      margin-top unit(num, px)
+    .m-l-sm-{num}
+      margin-left unit(num, px)
+    .m-r-sm-{num}
+      margin-right unit(num, px)
+    .m-h-sm-{num}
+      margin-right unit(num, px)
+      margin-left unit(num, px)
+    .m-v-sm-{num}
+      margin-top unit(num, px)
+      margin-bottom unit(num, px)
+
+    .p-sm-{num}
+      padding unit(num, px)
+    .p-b-sm-{num}
+      padding-bottom unit(num, px)
+    .p-t-sm-{num}
+      padding-top unit(num, px)
+    .p-l-sm-{num}
+      padding-left unit(num, px)
+    .p-r-sm-{num}
+      padding-right unit(num, px)
+    .p-h-sm-{num}
+      padding-right unit(num, px)
+      padding-left unit(num, px)
+    .p-v-sm-{num}
+      padding-top unit(num, px)
+      padding-bottom unit(num, px)
+
+
+
+// Resets (Important)
+.p-t-0
+  padding-top 0 !important
+.p-b-0
+  padding-bottom 0 !important
+.p-v-0
+  padding-top 0 !important
+  padding-bottom 0 !important
+
+.m-t-0
+  margin-top 0 !important
+.m-b-0
+  margin-bottom 0 !important
+.m-v-0
+  margin-top 0 !important
+  margin-bottom 0 !important
+.m-h-0
+  margin-left 0 !important
+  margin-right 0 !important
+
+.m-auto
+  margin-left auto
+  margin-right auto

@@ -1,0 +1,536 @@
+.iyziModal
+  display none
+  margin 0px auto
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  opacity 1
+  -ms-filter none
+  filter none
+  z-index 9999999
+  align-items center
+  justify-content center
+
+  .iyziModalWrap
+    max-width 970px
+    width 100%
+    height 100%
+    max-height 90%
+    margin 100px 0
+    overflow hidden
+    display flex
+    align-items center
+
+    @media (max-width 768px)
+      max-height 100%
+      margin 0
+
+    .otpPopup
+      max-height 320px !important
+      display flex
+      align-items center
+
+    .iyziModalContainer
+      overflow auto
+      height 100%
+      position relative
+      max-height 782px
+      width 100%
+      background-color #fff
+
+      @media (max-width 768px)
+        max-height 100vh
+
+      .modal-close
+        padding 0
+        margin 0
+        top 16px
+        right 16px
+        line-height 24px
+        outline none
+
+        svg
+          width 24px
+          height 24px
+
+      .modalContent
+        display flex
+        flex-direction column
+        align-items center
+        position relative
+        padding 30px
+
+        @media(max-width 768px)
+          padding 15px
+          position static
+
+        h2
+          font-size 25px
+          padding 30px 0 25px 0
+
+          @media(max-width 768px)
+            padding 20px 0 15px 0
+            font-size 24px
+
+        p
+          padding 25px 0
+          max-width 580px
+
+          @media(max-width 768px)
+            padding 15px 0
+
+        .buttonGroup
+          margin 0
+
+          button
+            padding 0 7.5px
+
+
+      .iyziModalContent
+        overflow-x auto
+        position relative
+        display flex
+        flex-direction row
+        top 0
+        right 0
+        bottom 0
+        left 0
+
+        @media (max-width 768px)
+          flex-direction column
+
+        .contentWrap
+          flex 1
+          padding 0 15px 0 0
+          background-color #fafafa
+
+          @media (max-width 768px)
+            background-color #ffffff
+
+          .content
+            padding 40px 20px 0 40px
+
+            h2
+              strong
+                font-size 48px
+
+            p
+              padding 20px 0 50px 0
+
+              @media (max-width 768px)
+                padding 20px 0 0 0
+
+            .imageWrap
+              padding 0 20px 0 0
+              display flex
+              justify-content center
+              flex-grow 1
+
+              @media (max-width 768px)
+                display none
+
+        .formWrap
+          flex 1
+          padding 0 0 0 15px
+
+          @media (max-width 768px)
+            padding 0
+
+.newForm
+  padding 60px 40px 60px 15px
+
+  @media(max-width 768px)
+    padding 20px
+
+
+
+  .buttonGroup
+    margin 0
+
+    @media(max-width 640px)
+      flex-direction column
+
+
+    a
+      width 100%
+      max-width 220px
+      justify-content center
+      font-weight 500
+
+      @media(max-width 640px)
+        max-width 100%
+        margin-bottom 15px
+
+
+  .contractText
+    font-size 12px
+    max-width 190px
+    text-align left
+    margin-left 10px
+
+    a
+      text-decoration none
+      color $clear-blue
+
+  .messagebox
+    #alertMessage
+      text-align left
+      font-size 12px
+
+      .error
+        font-size 12px
+        color #d33800
+
+  .inputWrap
+    display flex
+    flex-direction column
+    padding 0 0 15px 0
+    text-align left
+    position relative
+
+    .pass-eye
+      position absolute
+      top 30px
+      right 20px
+      display block
+
+      img:last-child
+        display none
+
+
+    .eyeToogle
+      img:first-child
+        display none
+
+      img:last-child
+        display inline-block
+
+    input[name="password"]
+      letter-spacing 16px
+
+    .hideClass
+      display none !important
+
+    .checkBoxWrap
+      display flex
+      flex-direction row
+
+      a
+        text-decoration none
+        color $clear-blue
+
+    .checkBoxWrap
+      input[type="checkbox"]
+        opacity 0
+
+      input[type="checkbox"]
+        &:checked
+          & ~ label
+                &:after
+                  content ""
+
+      input[type="checkbox"]
+        &.error
+          & ~ label
+                &:before
+                  border solid 1px #d33800 !important
+                  background-color #ffe3e3 !important
+
+      label
+        position relative
+        font-size 14px
+        display inline-block
+        padding-left 8px
+        margin 0
+        font-weight normal
+        max-width 415px
+
+        &:before
+          position absolute
+          content ""
+          display inline-block
+          height 24px
+          width 24px
+          border 1px solid #ced4da
+          border-radius 4px
+          background-color #fefefe
+          left -24px
+
+        &:after
+          position absolute
+          content none
+          display inline-block
+          height 8px
+          width 16px
+          border-left 2px solid
+          border-bottom 2px solid
+          transform rotate(-55deg)
+          left -20px
+          top 7px
+          color #82c91e
+
+      span
+        font-size 12px
+
+      input[type="checkbox"]
+        width 24px
+        height 24px
+        margin 0
+
+    .tooltiptext
+      font-size 16px
+      padding 10px 0
+      display block
+
+      span
+        font-size 12px
+        color $gray-900
+        letter-spacing 0
+        line-height 1.33
+        padding-right 15px
+        display inline-block
+
+        &::before
+            display inline-block
+            content ''
+            -webkit-border-radius 25px
+            border-radius 25px
+            height 4px
+            width 4px
+            margin-right 4px
+            position relative
+            top -1px
+            background-color #bdbdbd
+            color $gray-600
+
+            @media(min-width 768px)
+              background-color #bdbdbd
+        i
+          margin -4px 4px 0 0
+
+
+
+      & span.dashed
+          text-decoration line-through
+          color #b7c4cb
+
+      & span.wrong
+          color #FE5554
+
+      span.dashed
+
+        .icon--input-check-true
+          display inline-block
+
+        .icon--number-check
+          display none
+
+        .icon--min-character
+          display none
+
+        .icon--min-one-letter
+          display none
+
+        .icon--min-one-small-letter
+          display none
+
+      .icon--input-check-true
+        display none
+
+      .icon--number-check
+        display inline-block
+
+      .icon--min-character
+        display inline-block
+
+      .icon--min-one-letter
+        display inline-block
+
+      .icon--min-one-small-letter
+        display inline-block
+
+    span
+      font-size 18px
+      letter-spacing 1px
+      color #202020
+
+      @media(max-width 768px)
+        font-size 14px
+
+    label.error
+      margin 5px 0 0 0
+      font-size 12px
+      color #d33800 !important
+
+    input.error
+      border solid 1px #d33800 !important
+      background-color #ffe3e3 !important
+      border-radius 8px
+
+.iyziModal.in
+  display flex !important
+
+
+.otpPopup
+  @media(max-width 768px)
+    height 100% !important
+
+  .iyziModalWrap
+    @media(max-width 768px)
+      padding 0 !important
+
+    .iyziModalContainer
+      max-height 320px
+      position relative
+
+      @media(max-width 768px)
+        display flex !important
+        align-items center !important
+        max-height 100%
+
+        button
+          display none
+
+          @media(max-width 768px)
+            display block
+
+
+      .iyziModalContent
+        height 100%
+
+        @media(max-width 768px)
+          height auto
+
+        .contentWrap
+          @media(max-width 768px)
+            padding 0
+
+          .content
+            @media(max-width 768px)
+              padding 40px 40px 0 40px !important
+
+            h2
+              strong
+                @media(max-width 768px)
+                  font-size 24px
+
+
+        .formWrap
+          align-self center
+
+          @media(max-width 768px)
+            width 90%
+
+          button
+            display block
+            width 100%
+
+            @media(max-width 768px)
+              display none
+
+          .inputWrap
+            max-width 305px
+
+            @media(max-width 768px)
+              max-width 100%
+
+          .reSend
+            display flex
+            justify-content space-between
+            font-size 14px
+            max-width 305px
+            margin-bottom 50px
+            font-weight bold
+
+            @media(max-width 768px)
+              margin 0 0 20px 0
+              max-width 100%
+
+            a
+              color #adb5bd
+
+            .countdown
+              color #202020
+
+.fail-modal
+  .buttonGroup
+    margin 0
+
+    @media(max-width 768px)
+      margin 20px 0
+
+    .button
+      margin 30px 0 0 0 !important
+
+      @media(max-width 768px)
+        margin 0 !important
+
+.consumer-otp-popup
+  .messagebox
+    #alertMessage
+      text-align left
+
+.otpSuccessModal
+  .iyziModalWrap
+    .iyziModalContainer
+      max-height 590px
+
+      @media(max-width 768px)
+        max-height 100%
+
+.app-download-with-qr
+  .iyziModalWrap
+    max-width 546px
+    height auto
+    max-height auto
+
+    .iyziModalContainer
+      border-radius 8px
+
+      .iyziModalContent
+        flex-direction column
+
+        .content
+          display flex
+          padding 24px 32px
+          justify-content space-between
+          align-items center
+
+          .title
+            font-size 24px
+            text-align left
+            font-weight normal
+            line-height normal
+
+            span
+              font-weight bold
+
+
+.app-download-with-qr-apply-for-card
+  .iyziModalWrap
+    max-width 546px
+    height auto
+    max-height auto
+
+    .iyziModalContainer
+      border-radius 8px
+
+      .iyziModalContent
+        flex-direction column
+
+        .content
+          display flex
+          padding 24px 32px
+          justify-content space-between
+          align-items center
+
+          .title
+            font-size 24px
+            text-align left
+            font-weight normal
+            line-height normal
+
+            span
+              font-weight bold
