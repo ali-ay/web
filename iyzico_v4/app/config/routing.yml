@@ -1,4 +1,0 @@
-web:
-    resource: "@WebBundle/Resources/config/routing.yml"
-    type: be_simple_i18n
-    prefix:   /

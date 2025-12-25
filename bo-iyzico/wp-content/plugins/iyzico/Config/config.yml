@@ -1,9 +1,0 @@
-application:
-    version: 0.0.1
-    minimumWordpressVersion: 3.1
-    iyzicoStatusAPIDetails:
-        url: http://185.95.164.52/
-        developerKey: 7K1prU3EkworCTMdioau8poopGI4bU9F
-    iyzicoMediaServerDetails:
-        url: //localhost:8082/b/
-
